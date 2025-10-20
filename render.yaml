@@ -9,8 +9,8 @@ databases:
   - name: directus-db
     databaseName: directus
     user: directus_user
-    plan: pro
-    region: United States, Ohio
+    plan: starter
+    region: ohio
     ipAllowList: []  # Empty for private network access only
 
 services:
@@ -19,7 +19,7 @@ services:
   - type: pserv
     name: directus-backend
     env: docker
-    region: United States, Ohio
+    region: ohio
     plan: standard
     rootDir: backend
     dockerfilePath: ./Dockerfile
@@ -117,7 +117,6 @@ services:
   - type: web
     name: documentation-site
     env: static
-    plan: starter
     rootDir: frontend
 
     # Monorepo build filter - only deploy when frontend changes
