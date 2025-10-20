@@ -9,8 +9,8 @@ databases:
   - name: directus-db
     databaseName: directus
     user: directus_user
-    plan: starter
-    region: ohio
+    plan: basic_256mb
+    region: virginia
     ipAllowList: []  # Empty for private network access only
 
 services:
@@ -19,7 +19,7 @@ services:
   - type: pserv
     name: directus-backend
     env: docker
-    region: ohio
+    region: virginia
     plan: standard
     rootDir: backend
     dockerfilePath: ./Dockerfile
@@ -111,7 +111,7 @@ services:
     disk:
       name: directus-uploads
       mountPath: /directus/uploads
-      sizeGB: 10
+      sizeGB: 15
 
   # Static Frontend Site (Fumadocs)
   - type: web

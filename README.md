@@ -239,7 +239,7 @@ Access logs and metrics via Render Dashboard:
 - Review environment variables configuration
 
 ### Database Connection Issues
-- Verify database is in same region as backend (ohio)
+- Verify database is in same region as backend (virginia)
 - Check property references in `render.yaml`
 - Review database credentials in Render dashboard
 
