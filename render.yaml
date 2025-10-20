@@ -129,7 +129,7 @@ services:
 
     # Build configuration for Next.js static export
     buildCommand: npm install && npm run build
-    staticPublishPath: frontend/out
+    staticPublishPath: out
 
     # Custom domains (configure in Render dashboard)
     # domains:
