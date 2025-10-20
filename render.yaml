@@ -11,7 +11,7 @@ databases:
     databaseName: directus
     user: directus_user
     plan: pro
-    region: us-east
+    region: United States, Ohio
     ipAllowList: []  # Empty for private network access only
 
 services:
@@ -20,7 +20,7 @@ services:
   - type: pserv
     name: directus-backend
     env: docker
-    region: us-east
+    region: United States, Ohio
     plan: standard
     rootDirectory: backend
     dockerfilePath: ./Dockerfile
@@ -118,7 +118,7 @@ services:
   - type: web
     name: documentation-site
     env: static
-    region: us-east
+    region: United States, Ohio
     plan: starter
     rootDirectory: frontend
 
