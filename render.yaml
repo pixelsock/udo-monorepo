@@ -9,7 +9,7 @@ databases:
   - name: directus-db
     databaseName: directus
     user: directus_user
-    plan: basic_256mb
+    plan: Basic-1gb
     region: virginia
     ipAllowList: []  # Empty for private network access only
 
