@@ -6,8 +6,7 @@
 # with private networking for optimal performance
 
 databases:
-  - type: postgres
-    name: directus-db
+  - name: directus-db
     databaseName: directus
     user: directus_user
     plan: pro
