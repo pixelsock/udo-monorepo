@@ -1,0 +1,37 @@
+# Dockerignore for Directus build
+
+# Ignore git files
+.git
+.gitignore
+
+# Ignore node_modules (extensions should have their dist folders already built)
+node_modules/
+extensions/*/node_modules/
+
+# Ignore development files
+*.md
+*.log
+.env
+.env.local
+.env.development
+
+# Ignore source files - we only need dist folders
+extensions/*/src/
+
+# Registry extensions are included (local modified version)
+
+# Ignore Claude AI files
+extensions/.claude/
+extensions/CLAUDE.local.md
+extensions/COMPREHENSIVE_ANALYSIS_REPORT.md
+extensions/PERFORMANCE_ANALYSIS.md
+
+# Ignore test files
+extensions/*/test/
+extensions/*/*.test.js
+extensions/*/*.spec.js
+
+# Ignore package lock files (not needed in production)
+extensions/*/package-lock.json
+extensions/*/yarn.lock
+extensions/*/pnpm-lock.yaml

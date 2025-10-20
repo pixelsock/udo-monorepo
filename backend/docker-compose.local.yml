@@ -1,0 +1,71 @@
+networks:
+  directus-local:
+    name: directus-local-network
+
+services:
+  postgres:
+    image: pgvector/pgvector:pg17
+    container_name: directus-postgres-local
+    networks:
+      - directus-local
+    environment:
+      POSTGRES_USER: directus
+      POSTGRES_PASSWORD: directus
+      POSTGRES_DB: directus
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U directus"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  redis:
+    image: redis:7-alpine
+    container_name: directus-redis-local
+    networks:
+      - directus-local
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  directus:
+    image: directus/directus:11.12.0
+    container_name: directus-app-local
+    networks:
+      - directus-local
+    ports:
+      - "8056:8055"
+    volumes:
+      - ./uploads:/directus/uploads
+      - ./extensions:/directus/extensions
+      - ./data:/directus/data
+    env_file:
+      - ./.env.local
+    environment:
+      # Override any environment variables here if needed
+      EXTENSIONS_AUTO_RELOAD: "true"
+      EXTENSIONS_CACHE_TTL: "0"
+      MARKETPLACE_TRUST: "all"
+      LOG_LEVEL: "info"
+      LOG_STYLE: "pretty"
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    restart: unless-stopped
+
+volumes:
+  postgres_data:
+    name: directus-postgres-data-local
+  redis_data:
+    name: directus-redis-data-local

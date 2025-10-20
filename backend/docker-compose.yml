@@ -1,0 +1,61 @@
+version: '3.8'
+
+services:
+  database:
+    image: postgis/postgis:13-master
+    volumes:
+      - ./data/database:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: "directus"
+      POSTGRES_PASSWORD: "directus"
+      POSTGRES_DB: "directus"
+    healthcheck:
+      test: ["CMD", "pg_isready", "--host=localhost", "--username=directus"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_interval: 5s
+      start_period: 30s
+
+  cache:
+    image: redis:6
+    healthcheck:
+      test: ["CMD-SHELL", "[ $$(redis-cli ping) = 'PONG' ]"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_interval: 5s
+      start_period: 30s
+
+  directus:
+    image: directus/directus:11.12.0
+    ports:
+      - 8055:8055
+    volumes:
+      - ./uploads:/directus/uploads
+      - ./extensions:/directus/extensions
+    depends_on:
+      database:
+        condition: service_healthy
+      cache:
+        condition: service_healthy
+    environment:
+      SECRET: "y2jXIqHw4O"
+      MARKETPLACE_TRUST: "all"
+
+      DB_CLIENT: "pg"
+      DB_HOST: "dpg-d1gsdjjipnbc73b509f0-a"
+      DB_PORT: "5432"
+      DB_DATABASE: "cltudo_postgres"
+      DB_USER: "admin"
+      DB_PASSWORD: "00N0rXxlwSL25CoLxxwcW6r6jTFdrkeB"
+
+      CACHE_ENABLED: "true"
+      CACHE_AUTO_PURGE: "true"
+      CACHE_STORE: "redis"
+      REDIS: "redis://cache:6379"
+
+      ADMIN_EMAIL: "nick@stump.works"
+      ADMIN_PASSWORD: "admin"
+
+      PUBLIC_URL: "https://directus-latest-s0n8.onrender.com" 

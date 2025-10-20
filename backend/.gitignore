@@ -1,0 +1,56 @@
+# Production data - never commit
+data/
+uploads/
+
+# Extensions - include source but exclude builds
+extensions/**
+!extensions/**/package.json
+!extensions/**/dist/**
+!extensions/**/*.vue
+!extensions/**/*.js
+!extensions/**/*.ts
+!extensions/**/*.md
+!extensions/**/src/**
+
+# Environment files
+.env
+.env.local
+.env.production
+.env.production.*
+
+# Node modules
+node_modules/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Temporary files
+.tmp/
+.temp/
+
+# Build artifacts
+dist/
+build/
+
+# Next.js artifacts (shouldn't be here for Directus)
+.next/
+.open-next/
+
+# Backup files
+*.backup
+*.bak
+backups/
+*.sql
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db

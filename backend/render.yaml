@@ -1,0 +1,87 @@
+# render.yaml for deploying Directus with Docker on Render
+services:
+  - type: web
+    name: directus
+    env: docker
+    plan: standard
+    dockerfilePath: ./Dockerfile
+    # If your Dockerfile is not in the root, set the context
+    buildCommand: ''  # Use Dockerfile default
+    startCommand: ''  # Use Dockerfile default
+    
+    # The port Directus listens on
+    ports:
+      - 8055
+
+    # Environment variables (set sensitive values in the Render dashboard UI)
+    envVars:
+      - key: DB_CLIENT
+        value: pg
+      - key: DB_HOST
+        value: dpg-d1gsdjjipnbc73b509f0-a
+      - key: DB_PORT
+        value: 5432
+      - key: DB_DATABASE
+        value: cltudo_postgres
+      - key: DB_USER
+        value: admin
+      - key: DB_PASSWORD
+        sync: false  # Set in Render dashboard for security
+      - key: SECRET
+        sync: false  # Set in Render dashboard for security
+      - key: ADMIN_EMAIL
+        sync: false  # Set in Render dashboard for security
+      - key: ADMIN_PASSWORD
+        sync: false  # Set in Render dashboard for security
+      - key: PUBLIC_URL
+        value: https://directus-latest-s0n8.onrender.com
+      - key: CACHE_ENABLED
+        value: 'true'
+      - key: CACHE_AUTO_PURGE
+        value: 'true'
+      - key: CACHE_STORE
+        value: redis
+      - key: REDIS
+        value: redis://cache:6379
+
+      # Content Security Policy - Allow frontend iframe
+      - key: CONTENT_SECURITY_POLICY_DIRECTIVES__FRAME_SRC
+        value: "'self' https://charlotte-udo-frontend.onrender.com"
+      - key: CONTENT_SECURITY_POLICY_DIRECTIVES__CHILD_SRC
+        value: "'self' https://charlotte-udo-frontend.onrender.com blob:"
+      - key: CONTENT_SECURITY_POLICY_DIRECTIVES__SCRIPT_SRC
+        value: "array:'self',https://unpkg.com,data:,'unsafe-inline','unsafe-eval'"
+
+      # CORS Configuration - Allow frontend communication
+      - key: CORS_ENABLED
+        value: 'true'
+      - key: CORS_ORIGIN
+        value: 'https://charlotte-udo-frontend.onrender.com'
+      - key: CORS_CREDENTIALS
+        value: 'true'
+      - key: CORS_ALLOWED_HEADERS
+        value: 'Content-Type,Authorization,X-Orama-Analytics,X-Orama-Index'
+
+      # WebSocket Configuration
+      - key: WEBSOCKETS_ENABLED
+        value: 'true'
+      - key: WEBSOCKETS_HEARTBEAT_PERIOD
+        value: '30'
+
+      # Session Cookie Configuration for preview mode
+      - key: SESSION_COOKIE_SECURE
+        value: 'true'
+      - key: SESSION_COOKIE_SAME_SITE
+        value: 'None'
+
+      # Permissions Policy - Allow iframe features for visual editor
+      - key: PERMISSIONS_POLICY
+        value: 'autoplay=*, encrypted-media=*, fullscreen=*, accelerometer=*, gyroscope=*, clipboard-write=*, web-share=*'
+
+    # Persistent disk for uploads (optional, recommended)
+    disks:
+      - name: uploads
+        mountPath: /directus/uploads
+        sizeGB: 10
+
+# For local development, use docker-compose.yml instead. 

@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "@directus/sdk": "^20.1.0",
+    "@umoteam/editor": "^7.0.1",
+    "directus-extension-ai-agent": "^1.0.6",
+    "jsdom": "^27.0.0",
+    "pg": "^8.16.3"
+  }
+}

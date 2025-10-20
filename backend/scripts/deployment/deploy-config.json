@@ -1,0 +1,122 @@
+{
+  "deployment_config": {
+    "version": "1.0.0",
+    "description": "Directus deployment configuration for safe production deployments"
+  },
+  "exclude_patterns": [
+    "data/",
+    "uploads/",
+    "backups/",
+    ".env",
+    ".env.local",
+    ".env.production",
+    ".env.*",
+    "*.log",
+    "logs/",
+    "node_modules/",
+    ".git/",
+    ".tmp/",
+    ".temp/",
+    "*.backup",
+    "*.bak",
+    ".DS_Store",
+    "Thumbs.db",
+    "cache/",
+    ".cache/",
+    "thumbnails/",
+    "thumbs/",
+    "test-data/",
+    "*.test.js",
+    "*.spec.js",
+    "__tests__/",
+    "coverage/",
+    ".nyc_output/",
+    "docker-compose.override.yml",
+    "docker-compose.local.yml"
+  ],
+  "include_patterns": [
+    "extensions/",
+    "scripts/deployment/",
+    "package.json",
+    "package-lock.json",
+    "Dockerfile",
+    "render.yaml",
+    "docker-compose.yml",
+    "migrations/",
+    "templates/"
+  ],
+  "preserve_directories": [
+    "data",
+    "uploads",
+    "backups"
+  ],
+  "extension_sync": {
+    "enabled": true,
+    "include_source": true,
+    "include_dist": true,
+    "exclude_patterns": [
+      "node_modules/",
+      ".git/",
+      "*.log",
+      ".tmp/",
+      ".cache/"
+    ]
+  },
+  "atomic_deployment": {
+    "enabled": true,
+    "staging_directory": "./deployment-staging",
+    "use_symlinks": false,
+    "rollback_on_failure": true
+  },
+  "pre_deployment": {
+    "backup_required": true,
+    "health_checks": [
+      "database_connection",
+      "file_permissions",
+      "disk_space"
+    ],
+    "validation_scripts": [
+      "scripts/deployment/validate-environment.sh"
+    ]
+  },
+  "post_deployment": {
+    "validation_scripts": [
+      "scripts/deployment/validate-deployment.sh"
+    ],
+    "health_checks": [
+      "service_health",
+      "api_endpoints",
+      "file_accessibility"
+    ],
+    "cleanup_staging": true
+  },
+  "rsync_options": [
+    "--archive",
+    "--verbose",
+    "--progress",
+    "--human-readable",
+    "--compress",
+    "--partial",
+    "--inplace",
+    "--delete-excluded"
+  ],
+  "permissions": {
+    "file_mode": "644",
+    "directory_mode": "755",
+    "executable_files": [
+      "scripts/deployment/*.sh"
+    ]
+  },
+  "monitoring": {
+    "log_deployments": true,
+    "log_file": "deployment.log",
+    "track_file_changes": true,
+    "send_notifications": false
+  },
+  "security": {
+    "verify_checksums": true,
+    "scan_for_secrets": false,
+    "require_https": true,
+    "validate_certificates": true
+  }
+}

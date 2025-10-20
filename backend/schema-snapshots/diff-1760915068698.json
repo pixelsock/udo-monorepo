@@ -1,0 +1,4578 @@
+{
+  "hash": "9fbd55fdee9938187ad3617b550a35ba7d6962b3",
+  "diff": {
+    "collections": [
+      {
+        "collection": "ai_prompts",
+        "diff": [
+          {
+            "kind": "E",
+            "path": [
+              "meta",
+              "archive_field"
+            ],
+            "lhs": "status",
+            "rhs": null
+          },
+          {
+            "kind": "E",
+            "path": [
+              "meta",
+              "archive_value"
+            ],
+            "lhs": "archived",
+            "rhs": null
+          },
+          {
+            "kind": "E",
+            "path": [
+              "meta",
+              "icon"
+            ],
+            "lhs": "magic_button",
+            "rhs": "bolt"
+          },
+          {
+            "kind": "E",
+            "path": [
+              "meta",
+              "sort_field"
+            ],
+            "lhs": "sort",
+            "rhs": null
+          },
+          {
+            "kind": "E",
+            "path": [
+              "meta",
+              "unarchive_value"
+            ],
+            "lhs": "draft",
+            "rhs": null
+          }
+        ]
+      },
+      {
+        "collection": "global_settings",
+        "diff": [
+          {
+            "kind": "E",
+            "path": [
+              "meta",
+              "icon"
+            ],
+            "lhs": null,
+            "rhs": "settings_suggest"
+          }
+        ]
+      },
+      {
+        "collection": "pages",
+        "diff": [
+          {
+            "kind": "E",
+            "path": [
+              "meta",
+              "icon"
+            ],
+            "lhs": "web",
+            "rhs": "description"
+          },
+          {
+            "kind": "E",
+            "path": [
+              "meta",
+              "sort_field"
+            ],
+            "lhs": null,
+            "rhs": "sort"
+          }
+        ]
+      },
+      {
+        "collection": "settings",
+        "diff": [
+          {
+            "kind": "E",
+            "path": [
+              "meta",
+              "icon"
+            ],
+            "lhs": null,
+            "rhs": "settings"
+          }
+        ]
+      },
+      {
+        "collection": "ai_agent_settings",
+        "diff": [
+          {
+            "kind": "N",
+            "rhs": {
+              "collection": "ai_agent_settings",
+              "meta": {
+                "accountability": "all",
+                "archive_app_filter": true,
+                "archive_field": null,
+                "archive_value": null,
+                "collapse": "open",
+                "collection": "ai_agent_settings",
+                "color": null,
+                "display_template": null,
+                "group": null,
+                "hidden": false,
+                "icon": "settings",
+                "item_duplication_fields": null,
+                "note": "AI Agent settings",
+                "preview_url": null,
+                "singleton": true,
+                "sort": null,
+                "sort_field": null,
+                "translations": null,
+                "unarchive_value": null,
+                "versioning": false
+              },
+              "schema": {
+                "name": "ai_agent_settings"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "collection": "ai_assistant_settings",
+        "diff": [
+          {
+            "kind": "N",
+            "rhs": {
+              "collection": "ai_assistant_settings",
+              "meta": {
+                "accountability": "all",
+                "archive_app_filter": true,
+                "archive_field": null,
+                "archive_value": null,
+                "collapse": "open",
+                "collection": "ai_assistant_settings",
+                "color": null,
+                "display_template": null,
+                "group": null,
+                "hidden": false,
+                "icon": "settings",
+                "item_duplication_fields": null,
+                "note": "AI Assistant configuration and API keys",
+                "preview_url": null,
+                "singleton": true,
+                "sort": null,
+                "sort_field": null,
+                "translations": null,
+                "unarchive_value": null,
+                "versioning": false
+              },
+              "schema": {
+                "name": "ai_assistant_settings"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "collection": "home_page",
+        "diff": [
+          {
+            "kind": "N",
+            "rhs": {
+              "collection": "home_page",
+              "meta": {
+                "accountability": "all",
+                "archive_app_filter": true,
+                "archive_field": null,
+                "archive_value": null,
+                "collapse": "open",
+                "collection": "home_page",
+                "color": null,
+                "display_template": null,
+                "group": null,
+                "hidden": false,
+                "icon": "home",
+                "item_duplication_fields": null,
+                "note": null,
+                "preview_url": null,
+                "singleton": true,
+                "sort": null,
+                "sort_field": null,
+                "translations": null,
+                "unarchive_value": null,
+                "versioning": false
+              },
+              "schema": {
+                "name": "home_page"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "collection": "latest_updates",
+        "diff": [
+          {
+            "kind": "N",
+            "rhs": {
+              "collection": "latest_updates",
+              "meta": {
+                "accountability": "all",
+                "archive_app_filter": true,
+                "archive_field": null,
+                "archive_value": null,
+                "collapse": "open",
+                "collection": "latest_updates",
+                "color": null,
+                "display_template": "{{title}} - {{date}}",
+                "group": null,
+                "hidden": false,
+                "icon": "update",
+                "item_duplication_fields": null,
+                "note": "Latest updates and announcements for the Charlotte UDO",
+                "preview_url": null,
+                "singleton": false,
+                "sort": 10,
+                "sort_field": null,
+                "translations": null,
+                "unarchive_value": null,
+                "versioning": false
+              },
+              "schema": {
+                "name": "latest_updates"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "collection": "text_amendments",
+        "diff": [
+          {
+            "kind": "N",
+            "rhs": {
+              "collection": "text_amendments",
+              "meta": {
+                "accountability": "all",
+                "archive_app_filter": true,
+                "archive_field": null,
+                "archive_value": null,
+                "collapse": "open",
+                "collection": "text_amendments",
+                "color": null,
+                "display_template": "{{petition_number}} - {{title}}",
+                "group": null,
+                "hidden": false,
+                "icon": "text_increase",
+                "item_duplication_fields": null,
+                "note": "Text amendments and ordinance changes for the Charlotte UDO",
+                "preview_url": null,
+                "singleton": false,
+                "sort": 20,
+                "sort_field": null,
+                "translations": null,
+                "unarchive_value": null,
+                "versioning": false
+              },
+              "schema": {
+                "name": "text_amendments"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "collection": "video_embeds",
+        "diff": [
+          {
+            "kind": "N",
+            "rhs": {
+              "collection": "video_embeds",
+              "meta": {
+                "accountability": "all",
+                "archive_app_filter": true,
+                "archive_field": null,
+                "archive_value": null,
+                "collapse": "open",
+                "collection": "video_embeds",
+                "color": null,
+                "display_template": "{{title}}",
+                "group": null,
+                "hidden": false,
+                "icon": "videocam",
+                "item_duplication_fields": null,
+                "note": null,
+                "preview_url": null,
+                "singleton": false,
+                "sort": null,
+                "sort_field": null,
+                "translations": null,
+                "unarchive_value": null,
+                "versioning": false
+              },
+              "schema": {
+                "name": "video_embeds"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "fields": [
+      {
+        "collection": "ai_prompts",
+        "field": "id",
+        "diff": [
+          {
+            "kind": "E",
+            "path": [
+              "meta",
+              "hidden"
+            ],
+            "lhs": true,
+            "rhs": false
+          },
+          {
+            "kind": "E",
+            "path": [
+              "meta",
+              "interface"
+            ],
+            "lhs": "input",
+            "rhs": null
+          },
+          {
+            "kind": "E",
+            "path": [
+              "meta",
+              "sort"
+            ],
+            "lhs": 1,
+            "rhs": null
+          },
+          {
+            "kind": "E",
+            "path": [
+              "meta",
+              "width"
+            ],
+            "lhs": "half",
+            "rhs": "full"
+          }
+        ]
+      },
+      {
+        "collection": "ai_prompts",
+        "field": "sort",
+        "diff": [
+          {
+            "kind": "E",
+            "path": [
+              "meta",
+              "hidden"
+            ],
+            "lhs": true,
+            "rhs": false
+          },
+          {
+            "kind": "E",
+            "path": [
+              "meta",
+              "interface"
+            ],
+            "lhs": "input",
+            "rhs": null
+          },
+          {
+            "kind": "E",
+            "path": [
+              "meta",
+              "sort"
+            ],
+            "lhs": 2,
+            "rhs": null
+          },
+          {
+            "kind": "E",
+            "path": [
+              "meta",
+              "width"
+            ],
+            "lhs": "half",
+            "rhs": "full"
+          }
+        ]
+      },
+      {
+        "collection": "ai_prompts",
+        "field": "date_created",
+        "diff": [
+          {
+            "kind": "E",
+            "path": [
+              "meta",
+              "display"
+            ],
+            "lhs": "datetime",
+            "rhs": null
+          },
+          {
+            "kind": "E",
+            "path": [
+              "meta",
+              "display_options"
+            ],
+            "lhs": {
+              "relative": true
+            },
+            "rhs": null
+          },
+          {
+            "kind": "E",
+            "path": [
+              "meta",
+              "hidden"
+            ],
+            "lhs": true,
+            "rhs": false
+          },
+          {
+            "kind": "E",
+            "path": [
+              "meta",
+              "interface"
+            ],
+            "lhs": "datetime",
+            "rhs": null
+          },
+          {
+            "kind": "E",
+            "path": [
+              "meta",
+              "readonly"
+            ],
+            "lhs": true,
+            "rhs": false
+          },
+          {
+            "kind": "E",
+            "path": [
+              "meta",
+              "sort"
+            ],
+            "lhs": 3,
+            "rhs": null
+          },
+          {
+            "kind": "E",
+            "path": [
+              "meta",
+              "special"
+            ],
+            "lhs": [
+              "date-created"
+            ],
+            "rhs": null
+          },
+          {
+            "kind": "E",
+            "path": [
+              "meta",
+              "width"
+            ],
+            "lhs": "half",
+            "rhs": "full"
+          }
+        ]
+      },
+      {
+        "collection": "ai_prompts",
+        "field": "user_created",
+        "diff": [
+          {
+            "kind": "E",
+            "path": [
+              "meta",
+              "display"
+            ],
+            "lhs": "user",
+            "rhs": null
+          },
+          {
+            "kind": "E",
+            "path": [
+              "meta",
+              "hidden"
+            ],
+            "lhs": true,
+            "rhs": false
+          },
+          {
+            "kind": "E",
+            "path": [
+              "meta",
+              "interface"
+            ],
+            "lhs": "select-dropdown-m2o",
+            "rhs": null
+          },
+          {
+            "kind": "E",
+            "path": [
+              "meta",
+              "options"
+            ],
+            "lhs": {
+              "template": "{{avatar}} {{first_name}} {{last_name}}"
+            },
+            "rhs": null
+          },
+          {
+            "kind": "E",
+            "path": [
+              "meta",
+              "readonly"
+            ],
+            "lhs": true,
+            "rhs": false
+          },
+          {
+            "kind": "E",
+            "path": [
+              "meta",
+              "sort"
+            ],
+            "lhs": 4,
+            "rhs": null
+          },
+          {
+            "kind": "E",
+            "path": [
+              "meta",
+              "special",
+              0
+            ],
+            "lhs": "user-created",
+            "rhs": "uuid"
+          },
+          {
+            "kind": "E",
+            "path": [
+              "meta",
+              "width"
+            ],
+            "lhs": "half",
+            "rhs": "full"
+          }
+        ]
+      },
+      {
+        "collection": "ai_prompts",
+        "field": "date_updated",
+        "diff": [
+          {
+            "kind": "E",
+            "path": [
+              "meta",
+              "display"
+            ],
+            "lhs": "datetime",
+            "rhs": null
+          },
+          {
+            "kind": "E",
+            "path": [
+              "meta",
+              "display_options"
+            ],
+            "lhs": {
+              "relative": true
+            },
+            "rhs": null
+          },
+          {
+            "kind": "E",
+            "path": [
+              "meta",
+              "hidden"
+            ],
+            "lhs": true,
+            "rhs": false
+          },
+          {
+            "kind": "E",
+            "path": [
+              "meta",
+              "interface"
+            ],
+            "lhs": "datetime",
+            "rhs": null
+          },
+          {
+            "kind": "E",
+            "path": [
+              "meta",
+              "readonly"
+            ],
+            "lhs": true,
+            "rhs": false
+          },
+          {
+            "kind": "E",
+            "path": [
+              "meta",
+              "sort"
+            ],
+            "lhs": 5,
+            "rhs": null
+          },
+          {
+            "kind": "E",
+            "path": [
+              "meta",
+              "special"
+            ],
+            "lhs": [
+              "date-updated"
+            ],
+            "rhs": null
+          },
+          {
+            "kind": "E",
+            "path": [
+              "meta",
+              "width"
+            ],
+            "lhs": "half",
+            "rhs": "full"
+          }
+        ]
+      },
+      {
+        "collection": "ai_prompts",
+        "field": "user_updated",
+        "diff": [
+          {
+            "kind": "E",
+            "path": [
+              "meta",
+              "display"
+            ],
+            "lhs": "user",
+            "rhs": null
+          },
+          {
+            "kind": "E",
+            "path": [
+              "meta",
+              "hidden"
+            ],
+            "lhs": true,
+            "rhs": false
+          },
+          {
+            "kind": "E",
+            "path": [
+              "meta",
+              "interface"
+            ],
+            "lhs": "select-dropdown-m2o",
+            "rhs": null
+          },
+          {
+            "kind": "E",
+            "path": [
+              "meta",
+              "options"
+            ],
+            "lhs": {
+              "template": "{{avatar}} {{first_name}} {{last_name}}"
+            },
+            "rhs": null
+          },
+          {
+            "kind": "E",
+            "path": [
+              "meta",
+              "readonly"
+            ],
+            "lhs": true,
+            "rhs": false
+          },
+          {
+            "kind": "E",
+            "path": [
+              "meta",
+              "sort"
+            ],
+            "lhs": 6,
+            "rhs": null
+          },
+          {
+            "kind": "E",
+            "path": [
+              "meta",
+              "special",
+              0
+            ],
+            "lhs": "user-updated",
+            "rhs": "uuid"
+          },
+          {
+            "kind": "E",
+            "path": [
+              "meta",
+              "width"
+            ],
+            "lhs": "half",
+            "rhs": "full"
+          }
+        ]
+      },
+      {
+        "collection": "ai_prompts",
+        "field": "meta_prompts_notice",
+        "diff": [
+          {
+            "kind": "D",
+            "lhs": {
+              "collection": "ai_prompts",
+              "field": "meta_prompts_notice",
+              "type": "alias",
+              "meta": {
+                "collection": "ai_prompts",
+                "conditions": null,
+                "display": null,
+                "display_options": null,
+                "field": "meta_prompts_notice",
+                "group": null,
+                "hidden": false,
+                "interface": "presentation-notice",
+                "note": null,
+                "options": {
+                  "icon": "info",
+                  "text": "$t:mcp_prompts_collection_schema.meta_prompts_notice"
+                },
+                "readonly": false,
+                "required": false,
+                "sort": 7,
+                "special": [
+                  "alias",
+                  "no-data"
+                ],
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "full"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "collection": "ai_prompts",
+        "field": "name",
+        "diff": [
+          {
+            "kind": "E",
+            "path": [
+              "meta",
+              "display"
+            ],
+            "lhs": "formatted-value",
+            "rhs": null
+          },
+          {
+            "kind": "E",
+            "path": [
+              "meta",
+              "display_options"
+            ],
+            "lhs": {
+              "font": "monospace"
+            },
+            "rhs": null
+          },
+          {
+            "kind": "E",
+            "path": [
+              "meta",
+              "interface"
+            ],
+            "lhs": "input",
+            "rhs": null
+          },
+          {
+            "kind": "E",
+            "path": [
+              "meta",
+              "options"
+            ],
+            "lhs": {
+              "slug": true,
+              "trim": true
+            },
+            "rhs": null
+          },
+          {
+            "kind": "E",
+            "path": [
+              "meta",
+              "required"
+            ],
+            "lhs": true,
+            "rhs": false
+          },
+          {
+            "kind": "E",
+            "path": [
+              "meta",
+              "sort"
+            ],
+            "lhs": 8,
+            "rhs": null
+          },
+          {
+            "kind": "E",
+            "path": [
+              "meta",
+              "width"
+            ],
+            "lhs": "half",
+            "rhs": "full"
+          }
+        ]
+      },
+      {
+        "collection": "ai_prompts",
+        "field": "status",
+        "diff": [
+          {
+            "kind": "E",
+            "path": [
+              "meta",
+              "display"
+            ],
+            "lhs": "labels",
+            "rhs": null
+          },
+          {
+            "kind": "E",
+            "path": [
+              "meta",
+              "display_options"
+            ],
+            "lhs": {
+              "choices": [
+                {
+                  "background": "var(--theme--primary-background)",
+                  "color": "var(--theme--primary)",
+                  "foreground": "var(--theme--primary)",
+                  "text": "$t:published",
+                  "value": "published"
+                },
+                {
+                  "background": "var(--theme--background-normal)",
+                  "color": "var(--theme--foreground)",
+                  "foreground": "var(--theme--foreground)",
+                  "text": "$t:draft",
+                  "value": "draft"
+                },
+                {
+                  "background": "var(--theme--warning-background)",
+                  "color": "var(--theme--warning)",
+                  "foreground": "var(--theme--warning)",
+                  "text": "$t:archived",
+                  "value": "archived"
+                }
+              ]
+            },
+            "rhs": null
+          },
+          {
+            "kind": "E",
+            "path": [
+              "meta",
+              "interface"
+            ],
+            "lhs": "select-dropdown",
+            "rhs": null
+          },
+          {
+            "kind": "E",
+            "path": [
+              "meta",
+              "options"
+            ],
+            "lhs": {
+              "choices": [
+                {
+                  "color": "var(--theme--primary)",
+                  "text": "$t:published",
+                  "value": "published"
+                },
+                {
+                  "color": "var(--theme--foreground)",
+                  "text": "$t:draft",
+                  "value": "draft"
+                },
+                {
+                  "color": "var(--theme--warning)",
+                  "text": "$t:archived",
+                  "value": "archived"
+                }
+              ]
+            },
+            "rhs": null
+          },
+          {
+            "kind": "E",
+            "path": [
+              "meta",
+              "sort"
+            ],
+            "lhs": 9,
+            "rhs": null
+          },
+          {
+            "kind": "E",
+            "path": [
+              "meta",
+              "width"
+            ],
+            "lhs": "half",
+            "rhs": "full"
+          }
+        ]
+      },
+      {
+        "collection": "ai_prompts",
+        "field": "description",
+        "diff": [
+          {
+            "kind": "E",
+            "path": [
+              "meta",
+              "interface"
+            ],
+            "lhs": "input",
+            "rhs": null
+          },
+          {
+            "kind": "E",
+            "path": [
+              "meta",
+              "sort"
+            ],
+            "lhs": 10,
+            "rhs": null
+          }
+        ]
+      },
+      {
+        "collection": "ai_prompts",
+        "field": "system_prompt",
+        "diff": [
+          {
+            "kind": "E",
+            "path": [
+              "meta",
+              "interface"
+            ],
+            "lhs": "input-rich-text-md",
+            "rhs": null
+          },
+          {
+            "kind": "E",
+            "path": [
+              "meta",
+              "note"
+            ],
+            "lhs": "$t:mcp_prompts_collection_schema.system_prompt_note",
+            "rhs": null
+          },
+          {
+            "kind": "E",
+            "path": [
+              "meta",
+              "sort"
+            ],
+            "lhs": 11,
+            "rhs": null
+          }
+        ]
+      },
+      {
+        "collection": "ai_prompts",
+        "field": "messages",
+        "diff": [
+          {
+            "kind": "E",
+            "path": [
+              "meta",
+              "display"
+            ],
+            "lhs": "formatted-json-value",
+            "rhs": null
+          },
+          {
+            "kind": "E",
+            "path": [
+              "meta",
+              "display_options"
+            ],
+            "lhs": {
+              "format": "{{ role }} • {{ text }}"
+            },
+            "rhs": null
+          },
+          {
+            "kind": "E",
+            "path": [
+              "meta",
+              "interface"
+            ],
+            "lhs": "list",
+            "rhs": null
+          },
+          {
+            "kind": "E",
+            "path": [
+              "meta",
+              "note"
+            ],
+            "lhs": "$t:mcp_prompts_collection_schema.messages_note",
+            "rhs": null
+          },
+          {
+            "kind": "E",
+            "path": [
+              "meta",
+              "options"
+            ],
+            "lhs": {
+              "addLabel": "New Message",
+              "fields": [
+                {
+                  "field": "role",
+                  "meta": {
+                    "display": "labels",
+                    "display_options": {
+                      "choices": [
+                        {
+                          "icon": "person",
+                          "text": "$t:mcp_prompts_collection_schema.messages_role_user",
+                          "value": "user"
+                        },
+                        {
+                          "icon": "smart_toy",
+                          "text": "$t:mcp_prompts_collection_schema.messages_role_assistant",
+                          "value": "assistant"
+                        }
+                      ]
+                    },
+                    "field": "role",
+                    "interface": "select-dropdown",
+                    "note": "$t:mcp_prompts_collection_schema.messages_role_note",
+                    "options": {
+                      "choices": [
+                        {
+                          "icon": "person",
+                          "text": "$t:mcp_prompts_collection_schema.messages_role_user",
+                          "value": "user"
+                        },
+                        {
+                          "icon": "smart_toy",
+                          "text": "$t:mcp_prompts_collection_schema.messages_role_assistant",
+                          "value": "assistant"
+                        }
+                      ]
+                    },
+                    "required": true,
+                    "type": "string",
+                    "width": "full"
+                  },
+                  "name": "role",
+                  "type": "string"
+                },
+                {
+                  "field": "text",
+                  "meta": {
+                    "display": "formatted-value",
+                    "display_options": {
+                      "format": true
+                    },
+                    "field": "text",
+                    "interface": "input-rich-text-md",
+                    "note": "The actual content of the message. You can use {{ curly_braces }} for placeholders that will be replaced with real data.",
+                    "required": true,
+                    "type": "text",
+                    "width": "full"
+                  },
+                  "name": "text",
+                  "type": "text"
+                }
+              ],
+              "showConfirmDiscard": true,
+              "template": "{{ role }} • {{ text }}"
+            },
+            "rhs": null
+          },
+          {
+            "kind": "E",
+            "path": [
+              "meta",
+              "sort"
+            ],
+            "lhs": 12,
+            "rhs": null
+          }
+        ]
+      },
+      {
+        "collection": "articles",
+        "field": "content",
+        "diff": [
+          {
+            "kind": "E",
+            "path": [
+              "meta",
+              "options",
+              "aiModel"
+            ],
+            "lhs": "qwen/qwen3-coder:free",
+            "rhs": "google/gemini-2.0-flash-exp:free"
+          }
+        ]
+      },
+      {
+        "collection": "pages",
+        "field": "status",
+        "diff": [
+          {
+            "kind": "E",
+            "path": [
+              "meta",
+              "display"
+            ],
+            "lhs": "labels",
+            "rhs": null
+          },
+          {
+            "kind": "E",
+            "path": [
+              "meta",
+              "display_options"
+            ],
+            "lhs": {
+              "choices": [
+                {
+                  "background": "var(--theme--primary-background)",
+                  "color": "var(--theme--primary)",
+                  "foreground": "var(--theme--primary)",
+                  "text": "$t:published",
+                  "value": "published"
+                },
+                {
+                  "background": "var(--theme--background-normal)",
+                  "color": "var(--theme--foreground)",
+                  "foreground": "var(--theme--foreground)",
+                  "text": "$t:draft",
+                  "value": "draft"
+                },
+                {
+                  "background": "var(--theme--warning-background)",
+                  "color": "var(--theme--warning)",
+                  "foreground": "var(--theme--warning)",
+                  "text": "$t:archived",
+                  "value": "archived"
+                }
+              ],
+              "showAsDot": true
+            },
+            "rhs": null
+          },
+          {
+            "kind": "D",
+            "path": [
+              "meta",
+              "options",
+              "choices",
+              2,
+              "color"
+            ],
+            "lhs": "var(--theme--warning)"
+          },
+          {
+            "kind": "E",
+            "path": [
+              "meta",
+              "options",
+              "choices",
+              2,
+              "text"
+            ],
+            "lhs": "$t:archived",
+            "rhs": "Archived"
+          },
+          {
+            "kind": "D",
+            "path": [
+              "meta",
+              "options",
+              "choices",
+              1,
+              "color"
+            ],
+            "lhs": "var(--theme--foreground)"
+          },
+          {
+            "kind": "E",
+            "path": [
+              "meta",
+              "options",
+              "choices",
+              1,
+              "text"
+            ],
+            "lhs": "$t:draft",
+            "rhs": "Draft"
+          },
+          {
+            "kind": "D",
+            "path": [
+              "meta",
+              "options",
+              "choices",
+              0,
+              "color"
+            ],
+            "lhs": "var(--theme--primary)"
+          },
+          {
+            "kind": "E",
+            "path": [
+              "meta",
+              "options",
+              "choices",
+              0,
+              "text"
+            ],
+            "lhs": "$t:published",
+            "rhs": "Published"
+          }
+        ]
+      },
+      {
+        "collection": "pages",
+        "field": "name",
+        "diff": [
+          {
+            "kind": "E",
+            "path": [
+              "meta",
+              "required"
+            ],
+            "lhs": false,
+            "rhs": true
+          },
+          {
+            "kind": "E",
+            "path": [
+              "meta",
+              "width"
+            ],
+            "lhs": "full",
+            "rhs": "half"
+          },
+          {
+            "kind": "E",
+            "path": [
+              "schema",
+              "is_nullable"
+            ],
+            "lhs": true,
+            "rhs": false
+          }
+        ]
+      },
+      {
+        "collection": "pages",
+        "field": "slug",
+        "diff": [
+          {
+            "kind": "E",
+            "path": [
+              "meta",
+              "note"
+            ],
+            "lhs": null,
+            "rhs": "URL-friendly identifier for the page"
+          },
+          {
+            "kind": "E",
+            "path": [
+              "meta",
+              "options"
+            ],
+            "lhs": {
+              "slug": true
+            },
+            "rhs": null
+          },
+          {
+            "kind": "E",
+            "path": [
+              "meta",
+              "width"
+            ],
+            "lhs": "full",
+            "rhs": "half"
+          },
+          {
+            "kind": "E",
+            "path": [
+              "schema",
+              "is_nullable"
+            ],
+            "lhs": true,
+            "rhs": false
+          }
+        ]
+      },
+      {
+        "collection": "pages",
+        "field": "collab_pages",
+        "diff": [
+          {
+            "kind": "D",
+            "lhs": {
+              "collection": "pages",
+              "field": "collab_pages",
+              "type": "alias",
+              "meta": {
+                "collection": "pages",
+                "conditions": null,
+                "display": null,
+                "display_options": null,
+                "field": "collab_pages",
+                "group": null,
+                "hidden": false,
+                "interface": "presentation-collab-settings-interface",
+                "note": null,
+                "options": null,
+                "readonly": false,
+                "required": false,
+                "sort": 8,
+                "special": [
+                  "alias",
+                  "no-data"
+                ],
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "full"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "collection": "ai_agent_settings",
+        "field": "id",
+        "diff": [
+          {
+            "kind": "N",
+            "rhs": {
+              "collection": "ai_agent_settings",
+              "field": "id",
+              "type": "integer",
+              "meta": {
+                "collection": "ai_agent_settings",
+                "conditions": null,
+                "display": null,
+                "display_options": null,
+                "field": "id",
+                "group": null,
+                "hidden": false,
+                "interface": "input",
+                "note": null,
+                "options": null,
+                "readonly": false,
+                "required": false,
+                "sort": 1,
+                "special": [
+                  "primary"
+                ],
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "full"
+              },
+              "schema": {
+                "name": "id",
+                "table": "ai_agent_settings",
+                "data_type": "integer",
+                "default_value": "nextval('ai_agent_settings_id_seq'::regclass)",
+                "max_length": null,
+                "numeric_precision": 32,
+                "numeric_scale": 0,
+                "is_nullable": false,
+                "is_unique": true,
+                "is_indexed": false,
+                "is_primary_key": true,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": true,
+                "foreign_key_table": null,
+                "foreign_key_column": null
+              }
+            }
+          }
+        ]
+      },
+      {
+        "collection": "ai_agent_settings",
+        "field": "directus_url",
+        "diff": [
+          {
+            "kind": "N",
+            "rhs": {
+              "collection": "ai_agent_settings",
+              "field": "directus_url",
+              "type": "string",
+              "meta": {
+                "collection": "ai_agent_settings",
+                "conditions": null,
+                "display": null,
+                "display_options": null,
+                "field": "directus_url",
+                "group": null,
+                "hidden": false,
+                "interface": "input",
+                "note": null,
+                "options": null,
+                "readonly": false,
+                "required": false,
+                "sort": 2,
+                "special": null,
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "full"
+              },
+              "schema": {
+                "name": "directus_url",
+                "table": "ai_agent_settings",
+                "data_type": "character varying",
+                "default_value": null,
+                "max_length": 255,
+                "numeric_precision": null,
+                "numeric_scale": null,
+                "is_nullable": true,
+                "is_unique": false,
+                "is_indexed": false,
+                "is_primary_key": false,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": false,
+                "foreign_key_table": null,
+                "foreign_key_column": null
+              }
+            }
+          }
+        ]
+      },
+      {
+        "collection": "ai_agent_settings",
+        "field": "admin_token",
+        "diff": [
+          {
+            "kind": "N",
+            "rhs": {
+              "collection": "ai_agent_settings",
+              "field": "admin_token",
+              "type": "text",
+              "meta": {
+                "collection": "ai_agent_settings",
+                "conditions": null,
+                "display": null,
+                "display_options": null,
+                "field": "admin_token",
+                "group": null,
+                "hidden": false,
+                "interface": "input",
+                "note": null,
+                "options": null,
+                "readonly": false,
+                "required": false,
+                "sort": 3,
+                "special": null,
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "full"
+              },
+              "schema": {
+                "name": "admin_token",
+                "table": "ai_agent_settings",
+                "data_type": "text",
+                "default_value": null,
+                "max_length": null,
+                "numeric_precision": null,
+                "numeric_scale": null,
+                "is_nullable": true,
+                "is_unique": false,
+                "is_indexed": false,
+                "is_primary_key": false,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": false,
+                "foreign_key_table": null,
+                "foreign_key_column": null
+              }
+            }
+          }
+        ]
+      },
+      {
+        "collection": "ai_agent_settings",
+        "field": "ai_model",
+        "diff": [
+          {
+            "kind": "N",
+            "rhs": {
+              "collection": "ai_agent_settings",
+              "field": "ai_model",
+              "type": "string",
+              "meta": {
+                "collection": "ai_agent_settings",
+                "conditions": null,
+                "display": null,
+                "display_options": null,
+                "field": "ai_model",
+                "group": null,
+                "hidden": false,
+                "interface": "input",
+                "note": null,
+                "options": null,
+                "readonly": false,
+                "required": false,
+                "sort": 4,
+                "special": null,
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "full"
+              },
+              "schema": {
+                "name": "ai_model",
+                "table": "ai_agent_settings",
+                "data_type": "character varying",
+                "default_value": null,
+                "max_length": 100,
+                "numeric_precision": null,
+                "numeric_scale": null,
+                "is_nullable": true,
+                "is_unique": false,
+                "is_indexed": false,
+                "is_primary_key": false,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": false,
+                "foreign_key_table": null,
+                "foreign_key_column": null
+              }
+            }
+          }
+        ]
+      },
+      {
+        "collection": "ai_agent_settings",
+        "field": "ai_api_key",
+        "diff": [
+          {
+            "kind": "N",
+            "rhs": {
+              "collection": "ai_agent_settings",
+              "field": "ai_api_key",
+              "type": "string",
+              "meta": {
+                "collection": "ai_agent_settings",
+                "conditions": null,
+                "display": null,
+                "display_options": null,
+                "field": "ai_api_key",
+                "group": null,
+                "hidden": false,
+                "interface": "input",
+                "note": null,
+                "options": null,
+                "readonly": false,
+                "required": false,
+                "sort": 5,
+                "special": null,
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "full"
+              },
+              "schema": {
+                "name": "ai_api_key",
+                "table": "ai_agent_settings",
+                "data_type": "character varying",
+                "default_value": null,
+                "max_length": 255,
+                "numeric_precision": null,
+                "numeric_scale": null,
+                "is_nullable": true,
+                "is_unique": false,
+                "is_indexed": false,
+                "is_primary_key": false,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": false,
+                "foreign_key_table": null,
+                "foreign_key_column": null
+              }
+            }
+          }
+        ]
+      },
+      {
+        "collection": "ai_agent_settings",
+        "field": "ai_base_url",
+        "diff": [
+          {
+            "kind": "N",
+            "rhs": {
+              "collection": "ai_agent_settings",
+              "field": "ai_base_url",
+              "type": "string",
+              "meta": {
+                "collection": "ai_agent_settings",
+                "conditions": null,
+                "display": null,
+                "display_options": null,
+                "field": "ai_base_url",
+                "group": null,
+                "hidden": false,
+                "interface": "input",
+                "note": null,
+                "options": null,
+                "readonly": false,
+                "required": false,
+                "sort": 6,
+                "special": null,
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "full"
+              },
+              "schema": {
+                "name": "ai_base_url",
+                "table": "ai_agent_settings",
+                "data_type": "character varying",
+                "default_value": null,
+                "max_length": 255,
+                "numeric_precision": null,
+                "numeric_scale": null,
+                "is_nullable": true,
+                "is_unique": false,
+                "is_indexed": false,
+                "is_primary_key": false,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": false,
+                "foreign_key_table": null,
+                "foreign_key_column": null
+              }
+            }
+          }
+        ]
+      },
+      {
+        "collection": "ai_assistant_settings",
+        "field": "id",
+        "diff": [
+          {
+            "kind": "N",
+            "rhs": {
+              "collection": "ai_assistant_settings",
+              "field": "id",
+              "type": "integer",
+              "meta": {
+                "collection": "ai_assistant_settings",
+                "conditions": null,
+                "display": null,
+                "display_options": null,
+                "field": "id",
+                "group": null,
+                "hidden": true,
+                "interface": "input",
+                "note": null,
+                "options": null,
+                "readonly": true,
+                "required": false,
+                "sort": 1,
+                "special": null,
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "full"
+              },
+              "schema": {
+                "name": "id",
+                "table": "ai_assistant_settings",
+                "data_type": "integer",
+                "default_value": "nextval('ai_assistant_settings_id_seq'::regclass)",
+                "max_length": null,
+                "numeric_precision": 32,
+                "numeric_scale": 0,
+                "is_nullable": false,
+                "is_unique": true,
+                "is_indexed": false,
+                "is_primary_key": true,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": true,
+                "foreign_key_table": null,
+                "foreign_key_column": null
+              }
+            }
+          }
+        ]
+      },
+      {
+        "collection": "ai_assistant_settings",
+        "field": "openrouter_api_key",
+        "diff": [
+          {
+            "kind": "N",
+            "rhs": {
+              "collection": "ai_assistant_settings",
+              "field": "openrouter_api_key",
+              "type": "string",
+              "meta": {
+                "collection": "ai_assistant_settings",
+                "conditions": null,
+                "display": null,
+                "display_options": null,
+                "field": "openrouter_api_key",
+                "group": null,
+                "hidden": false,
+                "interface": "input",
+                "note": "Your OpenRouter API key for AI chat",
+                "options": null,
+                "readonly": false,
+                "required": false,
+                "sort": 2,
+                "special": [
+                  "conceal"
+                ],
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "full"
+              },
+              "schema": {
+                "name": "openrouter_api_key",
+                "table": "ai_assistant_settings",
+                "data_type": "character varying",
+                "default_value": null,
+                "max_length": 255,
+                "numeric_precision": null,
+                "numeric_scale": null,
+                "is_nullable": true,
+                "is_unique": false,
+                "is_indexed": false,
+                "is_primary_key": false,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": false,
+                "foreign_key_table": null,
+                "foreign_key_column": null
+              }
+            }
+          }
+        ]
+      },
+      {
+        "collection": "ai_assistant_settings",
+        "field": "default_model",
+        "diff": [
+          {
+            "kind": "N",
+            "rhs": {
+              "collection": "ai_assistant_settings",
+              "field": "default_model",
+              "type": "string",
+              "meta": {
+                "collection": "ai_assistant_settings",
+                "conditions": null,
+                "display": null,
+                "display_options": null,
+                "field": "default_model",
+                "group": null,
+                "hidden": false,
+                "interface": "select-dropdown",
+                "note": "Default AI model to use",
+                "options": {
+                  "choices": [
+                    {
+                      "text": "Claude 3.5 Sonnet",
+                      "value": "anthropic/claude-3.5-sonnet"
+                    },
+                    {
+                      "text": "Claude 3.5 Haiku",
+                      "value": "anthropic/claude-3.5-haiku"
+                    },
+                    {
+                      "text": "GPT-4o",
+                      "value": "openai/gpt-4o"
+                    },
+                    {
+                      "text": "GPT-4o Mini",
+                      "value": "openai/gpt-4o-mini"
+                    }
+                  ]
+                },
+                "readonly": false,
+                "required": false,
+                "sort": 3,
+                "special": null,
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "full"
+              },
+              "schema": {
+                "name": "default_model",
+                "table": "ai_assistant_settings",
+                "data_type": "character varying",
+                "default_value": "anthropic/claude-3.5-sonnet",
+                "max_length": 255,
+                "numeric_precision": null,
+                "numeric_scale": null,
+                "is_nullable": true,
+                "is_unique": false,
+                "is_indexed": false,
+                "is_primary_key": false,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": false,
+                "foreign_key_table": null,
+                "foreign_key_column": null
+              }
+            }
+          }
+        ]
+      },
+      {
+        "collection": "ai_assistant_settings",
+        "field": "mcp_admin_token",
+        "diff": [
+          {
+            "kind": "N",
+            "rhs": {
+              "collection": "ai_assistant_settings",
+              "field": "mcp_admin_token",
+              "type": "string",
+              "meta": {
+                "collection": "ai_assistant_settings",
+                "conditions": null,
+                "display": null,
+                "display_options": null,
+                "field": "mcp_admin_token",
+                "group": null,
+                "hidden": false,
+                "interface": "input",
+                "note": "Static admin token for MCP server authentication (required for AI tools)",
+                "options": null,
+                "readonly": false,
+                "required": false,
+                "sort": 4,
+                "special": null,
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "full"
+              },
+              "schema": {
+                "name": "mcp_admin_token",
+                "table": "ai_assistant_settings",
+                "data_type": "character varying",
+                "default_value": null,
+                "max_length": 255,
+                "numeric_precision": null,
+                "numeric_scale": null,
+                "is_nullable": true,
+                "is_unique": false,
+                "is_indexed": false,
+                "is_primary_key": false,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": false,
+                "foreign_key_table": null,
+                "foreign_key_column": null
+              }
+            }
+          }
+        ]
+      },
+      {
+        "collection": "home_page",
+        "field": "id",
+        "diff": [
+          {
+            "kind": "N",
+            "rhs": {
+              "collection": "home_page",
+              "field": "id",
+              "type": "integer",
+              "meta": {
+                "collection": "home_page",
+                "conditions": null,
+                "display": null,
+                "display_options": null,
+                "field": "id",
+                "group": null,
+                "hidden": true,
+                "interface": "input",
+                "note": null,
+                "options": null,
+                "readonly": true,
+                "required": false,
+                "sort": 1,
+                "special": null,
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "full"
+              },
+              "schema": {
+                "name": "id",
+                "table": "home_page",
+                "data_type": "integer",
+                "default_value": "nextval('home_page_id_seq'::regclass)",
+                "max_length": null,
+                "numeric_precision": 32,
+                "numeric_scale": 0,
+                "is_nullable": false,
+                "is_unique": true,
+                "is_indexed": false,
+                "is_primary_key": true,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": true,
+                "foreign_key_table": null,
+                "foreign_key_column": null
+              }
+            }
+          }
+        ]
+      },
+      {
+        "collection": "home_page",
+        "field": "header_text",
+        "diff": [
+          {
+            "kind": "N",
+            "rhs": {
+              "collection": "home_page",
+              "field": "header_text",
+              "type": "string",
+              "meta": {
+                "collection": "home_page",
+                "conditions": null,
+                "display": null,
+                "display_options": null,
+                "field": "header_text",
+                "group": null,
+                "hidden": false,
+                "interface": "input",
+                "note": null,
+                "options": null,
+                "readonly": false,
+                "required": false,
+                "sort": 2,
+                "special": null,
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "full"
+              },
+              "schema": {
+                "name": "header_text",
+                "table": "home_page",
+                "data_type": "character varying",
+                "default_value": null,
+                "max_length": 255,
+                "numeric_precision": null,
+                "numeric_scale": null,
+                "is_nullable": true,
+                "is_unique": false,
+                "is_indexed": false,
+                "is_primary_key": false,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": false,
+                "foreign_key_table": null,
+                "foreign_key_column": null
+              }
+            }
+          }
+        ]
+      },
+      {
+        "collection": "home_page",
+        "field": "header_description",
+        "diff": [
+          {
+            "kind": "N",
+            "rhs": {
+              "collection": "home_page",
+              "field": "header_description",
+              "type": "text",
+              "meta": {
+                "collection": "home_page",
+                "conditions": null,
+                "display": null,
+                "display_options": null,
+                "field": "header_description",
+                "group": null,
+                "hidden": false,
+                "interface": "input-multiline",
+                "note": null,
+                "options": null,
+                "readonly": false,
+                "required": false,
+                "sort": 3,
+                "special": null,
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "full"
+              },
+              "schema": {
+                "name": "header_description",
+                "table": "home_page",
+                "data_type": "text",
+                "default_value": null,
+                "max_length": null,
+                "numeric_precision": null,
+                "numeric_scale": null,
+                "is_nullable": true,
+                "is_unique": false,
+                "is_indexed": false,
+                "is_primary_key": false,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": false,
+                "foreign_key_table": null,
+                "foreign_key_column": null
+              }
+            }
+          }
+        ]
+      },
+      {
+        "collection": "home_page",
+        "field": "header_buttons",
+        "diff": [
+          {
+            "kind": "N",
+            "rhs": {
+              "collection": "home_page",
+              "field": "header_buttons",
+              "type": "json",
+              "meta": {
+                "collection": "home_page",
+                "conditions": null,
+                "display": null,
+                "display_options": null,
+                "field": "header_buttons",
+                "group": null,
+                "hidden": false,
+                "interface": "list",
+                "note": null,
+                "options": {
+                  "fields": [
+                    {
+                      "field": "button_text",
+                      "meta": {
+                        "field": "button_text",
+                        "interface": "input",
+                        "type": "string",
+                        "width": "half"
+                      },
+                      "name": "button_text",
+                      "type": "string"
+                    },
+                    {
+                      "field": "link",
+                      "meta": {
+                        "field": "link",
+                        "interface": "input",
+                        "type": "string"
+                      },
+                      "name": "link",
+                      "type": "string"
+                    },
+                    {
+                      "field": "icon",
+                      "meta": {
+                        "display": "icon",
+                        "field": "icon",
+                        "interface": "select-icon",
+                        "type": "string"
+                      },
+                      "name": "icon",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "readonly": false,
+                "required": false,
+                "sort": 4,
+                "special": [
+                  "cast-json"
+                ],
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "full"
+              },
+              "schema": {
+                "name": "header_buttons",
+                "table": "home_page",
+                "data_type": "json",
+                "default_value": null,
+                "max_length": null,
+                "numeric_precision": null,
+                "numeric_scale": null,
+                "is_nullable": true,
+                "is_unique": false,
+                "is_indexed": false,
+                "is_primary_key": false,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": false,
+                "foreign_key_table": null,
+                "foreign_key_column": null
+              }
+            }
+          }
+        ]
+      },
+      {
+        "collection": "home_page",
+        "field": "key_resources",
+        "diff": [
+          {
+            "kind": "N",
+            "rhs": {
+              "collection": "home_page",
+              "field": "key_resources",
+              "type": "json",
+              "meta": {
+                "collection": "home_page",
+                "conditions": null,
+                "display": "formatted-json-value",
+                "display_options": {
+                  "format": "{{ title }}"
+                },
+                "field": "key_resources",
+                "group": null,
+                "hidden": false,
+                "interface": "list",
+                "note": null,
+                "options": {
+                  "fields": [
+                    {
+                      "field": "icon",
+                      "meta": {
+                        "field": "icon",
+                        "interface": "select-icon",
+                        "type": "string",
+                        "width": "half"
+                      },
+                      "name": "icon",
+                      "type": "string"
+                    },
+                    {
+                      "field": "title",
+                      "meta": {
+                        "field": "title",
+                        "interface": "input",
+                        "type": "string",
+                        "width": "half"
+                      },
+                      "name": "title",
+                      "type": "string"
+                    },
+                    {
+                      "field": "description",
+                      "meta": {
+                        "field": "description",
+                        "interface": "input-rich-text-html",
+                        "options": {
+                          "toolbar": [
+                            "bold",
+                            "italic",
+                            "underline",
+                            "customLink"
+                          ]
+                        },
+                        "type": "text",
+                        "width": "half"
+                      },
+                      "name": "description",
+                      "type": "text"
+                    },
+                    {
+                      "field": "url",
+                      "meta": {
+                        "display": "formatted-value",
+                        "display_options": {
+                          "conditionalFormatting": null,
+                          "format": true
+                        },
+                        "field": "url",
+                        "interface": "input",
+                        "options": {
+                          "slug": true
+                        },
+                        "type": "text"
+                      },
+                      "name": "url",
+                      "type": "text"
+                    },
+                    {
+                      "field": "category",
+                      "meta": {
+                        "field": "category",
+                        "interface": "input",
+                        "type": "string",
+                        "width": "half"
+                      },
+                      "name": "category",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "readonly": false,
+                "required": false,
+                "sort": 5,
+                "special": [
+                  "cast-json"
+                ],
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "full"
+              },
+              "schema": {
+                "name": "key_resources",
+                "table": "home_page",
+                "data_type": "json",
+                "default_value": null,
+                "max_length": null,
+                "numeric_precision": null,
+                "numeric_scale": null,
+                "is_nullable": true,
+                "is_unique": false,
+                "is_indexed": false,
+                "is_primary_key": false,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": false,
+                "foreign_key_table": null,
+                "foreign_key_column": null
+              }
+            }
+          }
+        ]
+      },
+      {
+        "collection": "home_page",
+        "field": "updates",
+        "diff": [
+          {
+            "kind": "N",
+            "rhs": {
+              "collection": "home_page",
+              "field": "updates",
+              "type": "json",
+              "meta": {
+                "collection": "home_page",
+                "conditions": null,
+                "display": null,
+                "display_options": null,
+                "field": "updates",
+                "group": null,
+                "hidden": false,
+                "interface": "list",
+                "note": null,
+                "options": {
+                  "fields": [
+                    {
+                      "field": "date",
+                      "meta": {
+                        "field": "date",
+                        "interface": "datetime",
+                        "options": {
+                          "format": "short",
+                          "use24": false
+                        },
+                        "type": "date"
+                      },
+                      "name": "date",
+                      "type": "date"
+                    },
+                    {
+                      "field": "title",
+                      "meta": {
+                        "field": "title",
+                        "interface": "input",
+                        "type": "string"
+                      },
+                      "name": "title",
+                      "type": "string"
+                    },
+                    {
+                      "field": "description",
+                      "meta": {
+                        "field": "description",
+                        "interface": "input-multiline",
+                        "type": "text"
+                      },
+                      "name": "description",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "readonly": false,
+                "required": false,
+                "sort": 6,
+                "special": [
+                  "cast-json"
+                ],
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "full"
+              },
+              "schema": {
+                "name": "updates",
+                "table": "home_page",
+                "data_type": "json",
+                "default_value": null,
+                "max_length": null,
+                "numeric_precision": null,
+                "numeric_scale": null,
+                "is_nullable": true,
+                "is_unique": false,
+                "is_indexed": false,
+                "is_primary_key": false,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": false,
+                "foreign_key_table": null,
+                "foreign_key_column": null
+              }
+            }
+          }
+        ]
+      },
+      {
+        "collection": "home_page",
+        "field": "faqs",
+        "diff": [
+          {
+            "kind": "N",
+            "rhs": {
+              "collection": "home_page",
+              "field": "faqs",
+              "type": "json",
+              "meta": {
+                "collection": "home_page",
+                "conditions": null,
+                "display": null,
+                "display_options": null,
+                "field": "faqs",
+                "group": null,
+                "hidden": false,
+                "interface": "list",
+                "note": null,
+                "options": {
+                  "fields": [
+                    {
+                      "field": "question",
+                      "meta": {
+                        "field": "question",
+                        "interface": "input",
+                        "type": "string"
+                      },
+                      "name": "question",
+                      "type": "string"
+                    },
+                    {
+                      "field": "answer",
+                      "meta": {
+                        "field": "answer",
+                        "interface": "input-rich-text-html",
+                        "options": {
+                          "toolbar": [
+                            "bold",
+                            "italic",
+                            "underline",
+                            "customLink"
+                          ]
+                        },
+                        "type": "text"
+                      },
+                      "name": "answer",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "readonly": false,
+                "required": false,
+                "sort": 7,
+                "special": [
+                  "cast-json"
+                ],
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "full"
+              },
+              "schema": {
+                "name": "faqs",
+                "table": "home_page",
+                "data_type": "json",
+                "default_value": null,
+                "max_length": null,
+                "numeric_precision": null,
+                "numeric_scale": null,
+                "is_nullable": true,
+                "is_unique": false,
+                "is_indexed": false,
+                "is_primary_key": false,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": false,
+                "foreign_key_table": null,
+                "foreign_key_column": null
+              }
+            }
+          }
+        ]
+      },
+      {
+        "collection": "latest_updates",
+        "field": "id",
+        "diff": [
+          {
+            "kind": "N",
+            "rhs": {
+              "collection": "latest_updates",
+              "field": "id",
+              "type": "integer",
+              "meta": {
+                "collection": "latest_updates",
+                "conditions": null,
+                "display": null,
+                "display_options": null,
+                "field": "id",
+                "group": null,
+                "hidden": true,
+                "interface": "numeric",
+                "note": null,
+                "options": null,
+                "readonly": true,
+                "required": false,
+                "sort": 1,
+                "special": null,
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "full"
+              },
+              "schema": {
+                "name": "id",
+                "table": "latest_updates",
+                "data_type": "integer",
+                "default_value": "nextval('latest_updates_id_seq'::regclass)",
+                "max_length": null,
+                "numeric_precision": 32,
+                "numeric_scale": 0,
+                "is_nullable": false,
+                "is_unique": true,
+                "is_indexed": false,
+                "is_primary_key": true,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": true,
+                "foreign_key_table": null,
+                "foreign_key_column": null
+              }
+            }
+          }
+        ]
+      },
+      {
+        "collection": "latest_updates",
+        "field": "title",
+        "diff": [
+          {
+            "kind": "N",
+            "rhs": {
+              "collection": "latest_updates",
+              "field": "title",
+              "type": "string",
+              "meta": {
+                "collection": "latest_updates",
+                "conditions": null,
+                "display": null,
+                "display_options": null,
+                "field": "title",
+                "group": null,
+                "hidden": false,
+                "interface": "input",
+                "note": "Title of the update",
+                "options": null,
+                "readonly": false,
+                "required": true,
+                "sort": 2,
+                "special": null,
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "full"
+              },
+              "schema": {
+                "name": "title",
+                "table": "latest_updates",
+                "data_type": "character varying",
+                "default_value": null,
+                "max_length": 255,
+                "numeric_precision": null,
+                "numeric_scale": null,
+                "is_nullable": false,
+                "is_unique": false,
+                "is_indexed": false,
+                "is_primary_key": false,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": false,
+                "foreign_key_table": null,
+                "foreign_key_column": null
+              }
+            }
+          }
+        ]
+      },
+      {
+        "collection": "latest_updates",
+        "field": "date",
+        "diff": [
+          {
+            "kind": "N",
+            "rhs": {
+              "collection": "latest_updates",
+              "field": "date",
+              "type": "timestamp",
+              "meta": {
+                "collection": "latest_updates",
+                "conditions": null,
+                "display": null,
+                "display_options": null,
+                "field": "date",
+                "group": null,
+                "hidden": false,
+                "interface": "datetime",
+                "note": "Date of the update",
+                "options": null,
+                "readonly": false,
+                "required": true,
+                "sort": 4,
+                "special": null,
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "half"
+              },
+              "schema": {
+                "name": "date",
+                "table": "latest_updates",
+                "data_type": "timestamp with time zone",
+                "default_value": null,
+                "max_length": null,
+                "numeric_precision": null,
+                "numeric_scale": null,
+                "is_nullable": false,
+                "is_unique": false,
+                "is_indexed": false,
+                "is_primary_key": false,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": false,
+                "foreign_key_table": null,
+                "foreign_key_column": null
+              }
+            }
+          }
+        ]
+      },
+      {
+        "collection": "latest_updates",
+        "field": "sort",
+        "diff": [
+          {
+            "kind": "N",
+            "rhs": {
+              "collection": "latest_updates",
+              "field": "sort",
+              "type": "integer",
+              "meta": {
+                "collection": "latest_updates",
+                "conditions": null,
+                "display": null,
+                "display_options": null,
+                "field": "sort",
+                "group": null,
+                "hidden": false,
+                "interface": "input",
+                "note": "Sort order for display",
+                "options": null,
+                "readonly": false,
+                "required": false,
+                "sort": 6,
+                "special": null,
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "half"
+              },
+              "schema": {
+                "name": "sort",
+                "table": "latest_updates",
+                "data_type": "integer",
+                "default_value": 0,
+                "max_length": null,
+                "numeric_precision": 32,
+                "numeric_scale": 0,
+                "is_nullable": true,
+                "is_unique": false,
+                "is_indexed": false,
+                "is_primary_key": false,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": false,
+                "foreign_key_table": null,
+                "foreign_key_column": null
+              }
+            }
+          }
+        ]
+      },
+      {
+        "collection": "latest_updates",
+        "field": "status",
+        "diff": [
+          {
+            "kind": "N",
+            "rhs": {
+              "collection": "latest_updates",
+              "field": "status",
+              "type": "string",
+              "meta": {
+                "collection": "latest_updates",
+                "conditions": null,
+                "display": "labels",
+                "display_options": {
+                  "choices": [
+                    {
+                      "background": "var(--theme--background-normal)",
+                      "color": "var(--theme--foreground)",
+                      "foreground": "var(--theme--foreground)",
+                      "text": "Draft",
+                      "value": "draft"
+                    },
+                    {
+                      "background": "var(--theme--primary-background)",
+                      "color": "var(--theme--primary)",
+                      "foreground": "var(--theme--primary)",
+                      "text": "Published",
+                      "value": "publish"
+                    }
+                  ],
+                  "showAsDot": true
+                },
+                "field": "status",
+                "group": null,
+                "hidden": false,
+                "interface": "select-dropdown",
+                "note": null,
+                "options": {
+                  "choices": [
+                    {
+                      "color": "var(--theme--foreground)",
+                      "text": "Draft",
+                      "value": "draft"
+                    },
+                    {
+                      "color": "var(--theme--primary)",
+                      "text": "Published",
+                      "value": "publish"
+                    }
+                  ]
+                },
+                "readonly": false,
+                "required": false,
+                "sort": 7,
+                "special": null,
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "half"
+              },
+              "schema": {
+                "name": "status",
+                "table": "latest_updates",
+                "data_type": "character varying",
+                "default_value": "draft",
+                "max_length": 255,
+                "numeric_precision": null,
+                "numeric_scale": null,
+                "is_nullable": false,
+                "is_unique": false,
+                "is_indexed": false,
+                "is_primary_key": false,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": false,
+                "foreign_key_table": null,
+                "foreign_key_column": null
+              }
+            }
+          }
+        ]
+      },
+      {
+        "collection": "latest_updates",
+        "field": "category",
+        "diff": [
+          {
+            "kind": "N",
+            "rhs": {
+              "collection": "latest_updates",
+              "field": "category",
+              "type": "string",
+              "meta": {
+                "collection": "latest_updates",
+                "conditions": null,
+                "display": null,
+                "display_options": null,
+                "field": "category",
+                "group": null,
+                "hidden": false,
+                "interface": "select-dropdown",
+                "note": "Category of the update",
+                "options": {
+                  "choices": [
+                    {
+                      "color": "var(--theme--primary)",
+                      "text": "Information",
+                      "value": "information"
+                    },
+                    {
+                      "color": "var(--theme--success)",
+                      "text": "Approved",
+                      "value": "approved"
+                    },
+                    {
+                      "color": "var(--theme--warning)",
+                      "text": "Pending",
+                      "value": "pending"
+                    }
+                  ]
+                },
+                "readonly": false,
+                "required": false,
+                "sort": 8,
+                "special": null,
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "half"
+              },
+              "schema": {
+                "name": "category",
+                "table": "latest_updates",
+                "data_type": "character varying",
+                "default_value": "information",
+                "max_length": 255,
+                "numeric_precision": null,
+                "numeric_scale": null,
+                "is_nullable": false,
+                "is_unique": false,
+                "is_indexed": false,
+                "is_primary_key": false,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": false,
+                "foreign_key_table": null,
+                "foreign_key_column": null
+              }
+            }
+          }
+        ]
+      },
+      {
+        "collection": "latest_updates",
+        "field": "description",
+        "diff": [
+          {
+            "kind": "N",
+            "rhs": {
+              "collection": "latest_updates",
+              "field": "description",
+              "type": "text",
+              "meta": {
+                "collection": "latest_updates",
+                "conditions": null,
+                "display": null,
+                "display_options": null,
+                "field": "description",
+                "group": null,
+                "hidden": false,
+                "interface": "input-rich-text-html",
+                "note": "Detailed description of the update with rich text formatting and links support",
+                "options": {
+                  "toolbar": [
+                    "bold",
+                    "italic",
+                    "underline",
+                    "strike",
+                    "link",
+                    "unordered-list",
+                    "ordered-list"
+                  ]
+                },
+                "readonly": false,
+                "required": false,
+                "sort": 9,
+                "special": null,
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "full"
+              },
+              "schema": {
+                "name": "description",
+                "table": "latest_updates",
+                "data_type": "text",
+                "default_value": null,
+                "max_length": null,
+                "numeric_precision": null,
+                "numeric_scale": null,
+                "is_nullable": true,
+                "is_unique": false,
+                "is_indexed": false,
+                "is_primary_key": false,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": false,
+                "foreign_key_table": null,
+                "foreign_key_column": null
+              }
+            }
+          }
+        ]
+      },
+      {
+        "collection": "pages",
+        "field": "sort",
+        "diff": [
+          {
+            "kind": "N",
+            "rhs": {
+              "collection": "pages",
+              "field": "sort",
+              "type": "integer",
+              "meta": {
+                "collection": "pages",
+                "conditions": null,
+                "display": null,
+                "display_options": null,
+                "field": "sort",
+                "group": null,
+                "hidden": true,
+                "interface": "input",
+                "note": null,
+                "options": null,
+                "readonly": false,
+                "required": false,
+                "sort": 8,
+                "special": null,
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "full"
+              },
+              "schema": {
+                "name": "sort",
+                "table": "pages",
+                "data_type": "integer",
+                "default_value": null,
+                "max_length": null,
+                "numeric_precision": 32,
+                "numeric_scale": 0,
+                "is_nullable": true,
+                "is_unique": false,
+                "is_indexed": false,
+                "is_primary_key": false,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": false,
+                "foreign_key_table": null,
+                "foreign_key_column": null
+              }
+            }
+          }
+        ]
+      },
+      {
+        "collection": "text_amendments",
+        "field": "id",
+        "diff": [
+          {
+            "kind": "N",
+            "rhs": {
+              "collection": "text_amendments",
+              "field": "id",
+              "type": "integer",
+              "meta": {
+                "collection": "text_amendments",
+                "conditions": null,
+                "display": null,
+                "display_options": null,
+                "field": "id",
+                "group": null,
+                "hidden": true,
+                "interface": "numeric",
+                "note": null,
+                "options": null,
+                "readonly": true,
+                "required": false,
+                "sort": 1,
+                "special": null,
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "full"
+              },
+              "schema": {
+                "name": "id",
+                "table": "text_amendments",
+                "data_type": "integer",
+                "default_value": "nextval('text_amendments_id_seq'::regclass)",
+                "max_length": null,
+                "numeric_precision": 32,
+                "numeric_scale": 0,
+                "is_nullable": false,
+                "is_unique": true,
+                "is_indexed": false,
+                "is_primary_key": true,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": true,
+                "foreign_key_table": null,
+                "foreign_key_column": null
+              }
+            }
+          }
+        ]
+      },
+      {
+        "collection": "text_amendments",
+        "field": "petition_number",
+        "diff": [
+          {
+            "kind": "N",
+            "rhs": {
+              "collection": "text_amendments",
+              "field": "petition_number",
+              "type": "string",
+              "meta": {
+                "collection": "text_amendments",
+                "conditions": null,
+                "display": null,
+                "display_options": null,
+                "field": "petition_number",
+                "group": null,
+                "hidden": false,
+                "interface": "input",
+                "note": "Petition number (e.g., 2025-047)",
+                "options": null,
+                "readonly": false,
+                "required": true,
+                "sort": 2,
+                "special": null,
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "half"
+              },
+              "schema": {
+                "name": "petition_number",
+                "table": "text_amendments",
+                "data_type": "character varying",
+                "default_value": null,
+                "max_length": 255,
+                "numeric_precision": null,
+                "numeric_scale": null,
+                "is_nullable": false,
+                "is_unique": false,
+                "is_indexed": false,
+                "is_primary_key": false,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": false,
+                "foreign_key_table": null,
+                "foreign_key_column": null
+              }
+            }
+          }
+        ]
+      },
+      {
+        "collection": "text_amendments",
+        "field": "ordinance_number",
+        "diff": [
+          {
+            "kind": "N",
+            "rhs": {
+              "collection": "text_amendments",
+              "field": "ordinance_number",
+              "type": "string",
+              "meta": {
+                "collection": "text_amendments",
+                "conditions": null,
+                "display": null,
+                "display_options": null,
+                "field": "ordinance_number",
+                "group": null,
+                "hidden": false,
+                "interface": "input",
+                "note": "Ordinance number if applicable",
+                "options": null,
+                "readonly": false,
+                "required": false,
+                "sort": 3,
+                "special": null,
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "half"
+              },
+              "schema": {
+                "name": "ordinance_number",
+                "table": "text_amendments",
+                "data_type": "character varying",
+                "default_value": null,
+                "max_length": 255,
+                "numeric_precision": null,
+                "numeric_scale": null,
+                "is_nullable": true,
+                "is_unique": false,
+                "is_indexed": false,
+                "is_primary_key": false,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": false,
+                "foreign_key_table": null,
+                "foreign_key_column": null
+              }
+            }
+          }
+        ]
+      },
+      {
+        "collection": "text_amendments",
+        "field": "title",
+        "diff": [
+          {
+            "kind": "N",
+            "rhs": {
+              "collection": "text_amendments",
+              "field": "title",
+              "type": "string",
+              "meta": {
+                "collection": "text_amendments",
+                "conditions": null,
+                "display": null,
+                "display_options": null,
+                "field": "title",
+                "group": null,
+                "hidden": false,
+                "interface": "input",
+                "note": "Title of the text amendment",
+                "options": null,
+                "readonly": false,
+                "required": true,
+                "sort": 4,
+                "special": null,
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "full"
+              },
+              "schema": {
+                "name": "title",
+                "table": "text_amendments",
+                "data_type": "character varying",
+                "default_value": null,
+                "max_length": 255,
+                "numeric_precision": null,
+                "numeric_scale": null,
+                "is_nullable": false,
+                "is_unique": false,
+                "is_indexed": false,
+                "is_primary_key": false,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": false,
+                "foreign_key_table": null,
+                "foreign_key_column": null
+              }
+            }
+          }
+        ]
+      },
+      {
+        "collection": "text_amendments",
+        "field": "filing_date",
+        "diff": [
+          {
+            "kind": "N",
+            "rhs": {
+              "collection": "text_amendments",
+              "field": "filing_date",
+              "type": "string",
+              "meta": {
+                "collection": "text_amendments",
+                "conditions": null,
+                "display": null,
+                "display_options": null,
+                "field": "filing_date",
+                "group": null,
+                "hidden": false,
+                "interface": "input",
+                "note": "Date when the petition was filed (text field)",
+                "options": null,
+                "readonly": false,
+                "required": false,
+                "sort": 5,
+                "special": null,
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "half"
+              },
+              "schema": {
+                "name": "filing_date",
+                "table": "text_amendments",
+                "data_type": "character varying",
+                "default_value": null,
+                "max_length": 255,
+                "numeric_precision": null,
+                "numeric_scale": null,
+                "is_nullable": true,
+                "is_unique": false,
+                "is_indexed": false,
+                "is_primary_key": false,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": false,
+                "foreign_key_table": null,
+                "foreign_key_column": null
+              }
+            }
+          }
+        ]
+      },
+      {
+        "collection": "text_amendments",
+        "field": "public_hearing_date",
+        "diff": [
+          {
+            "kind": "N",
+            "rhs": {
+              "collection": "text_amendments",
+              "field": "public_hearing_date",
+              "type": "string",
+              "meta": {
+                "collection": "text_amendments",
+                "conditions": null,
+                "display": null,
+                "display_options": null,
+                "field": "public_hearing_date",
+                "group": null,
+                "hidden": false,
+                "interface": "input",
+                "note": "Date of public hearing (text field)",
+                "options": null,
+                "readonly": false,
+                "required": false,
+                "sort": 6,
+                "special": null,
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "half"
+              },
+              "schema": {
+                "name": "public_hearing_date",
+                "table": "text_amendments",
+                "data_type": "character varying",
+                "default_value": null,
+                "max_length": 255,
+                "numeric_precision": null,
+                "numeric_scale": null,
+                "is_nullable": true,
+                "is_unique": false,
+                "is_indexed": false,
+                "is_primary_key": false,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": false,
+                "foreign_key_table": null,
+                "foreign_key_column": null
+              }
+            }
+          }
+        ]
+      },
+      {
+        "collection": "text_amendments",
+        "field": "zoning_planning_committee_date",
+        "diff": [
+          {
+            "kind": "N",
+            "rhs": {
+              "collection": "text_amendments",
+              "field": "zoning_planning_committee_date",
+              "type": "string",
+              "meta": {
+                "collection": "text_amendments",
+                "conditions": null,
+                "display": null,
+                "display_options": null,
+                "field": "zoning_planning_committee_date",
+                "group": null,
+                "hidden": false,
+                "interface": "input",
+                "note": "Date of zoning/planning committee meeting (text field)",
+                "options": null,
+                "readonly": false,
+                "required": false,
+                "sort": 7,
+                "special": null,
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "half"
+              },
+              "schema": {
+                "name": "zoning_planning_committee_date",
+                "table": "text_amendments",
+                "data_type": "character varying",
+                "default_value": null,
+                "max_length": 255,
+                "numeric_precision": null,
+                "numeric_scale": null,
+                "is_nullable": true,
+                "is_unique": false,
+                "is_indexed": false,
+                "is_primary_key": false,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": false,
+                "foreign_key_table": null,
+                "foreign_key_column": null
+              }
+            }
+          }
+        ]
+      },
+      {
+        "collection": "text_amendments",
+        "field": "city_council_decision_date",
+        "diff": [
+          {
+            "kind": "N",
+            "rhs": {
+              "collection": "text_amendments",
+              "field": "city_council_decision_date",
+              "type": "string",
+              "meta": {
+                "collection": "text_amendments",
+                "conditions": null,
+                "display": null,
+                "display_options": null,
+                "field": "city_council_decision_date",
+                "group": null,
+                "hidden": false,
+                "interface": "input",
+                "note": "Date of city council decision (text field)",
+                "options": null,
+                "readonly": false,
+                "required": false,
+                "sort": 8,
+                "special": null,
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "half"
+              },
+              "schema": {
+                "name": "city_council_decision_date",
+                "table": "text_amendments",
+                "data_type": "character varying",
+                "default_value": null,
+                "max_length": 255,
+                "numeric_precision": null,
+                "numeric_scale": null,
+                "is_nullable": true,
+                "is_unique": false,
+                "is_indexed": false,
+                "is_primary_key": false,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": false,
+                "foreign_key_table": null,
+                "foreign_key_column": null
+              }
+            }
+          }
+        ]
+      },
+      {
+        "collection": "text_amendments",
+        "field": "effective_date",
+        "diff": [
+          {
+            "kind": "N",
+            "rhs": {
+              "collection": "text_amendments",
+              "field": "effective_date",
+              "type": "string",
+              "meta": {
+                "collection": "text_amendments",
+                "conditions": null,
+                "display": null,
+                "display_options": null,
+                "field": "effective_date",
+                "group": null,
+                "hidden": false,
+                "interface": "input",
+                "note": "Date when the amendment becomes effective (text field)",
+                "options": null,
+                "readonly": false,
+                "required": false,
+                "sort": 9,
+                "special": null,
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "half"
+              },
+              "schema": {
+                "name": "effective_date",
+                "table": "text_amendments",
+                "data_type": "character varying",
+                "default_value": null,
+                "max_length": 255,
+                "numeric_precision": null,
+                "numeric_scale": null,
+                "is_nullable": true,
+                "is_unique": false,
+                "is_indexed": false,
+                "is_primary_key": false,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": false,
+                "foreign_key_table": null,
+                "foreign_key_column": null
+              }
+            }
+          }
+        ]
+      },
+      {
+        "collection": "text_amendments",
+        "field": "sort",
+        "diff": [
+          {
+            "kind": "N",
+            "rhs": {
+              "collection": "text_amendments",
+              "field": "sort",
+              "type": "integer",
+              "meta": {
+                "collection": "text_amendments",
+                "conditions": null,
+                "display": null,
+                "display_options": null,
+                "field": "sort",
+                "group": null,
+                "hidden": true,
+                "interface": "input",
+                "note": null,
+                "options": null,
+                "readonly": false,
+                "required": false,
+                "sort": 10,
+                "special": null,
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "full"
+              },
+              "schema": {
+                "name": "sort",
+                "table": "text_amendments",
+                "data_type": "integer",
+                "default_value": null,
+                "max_length": null,
+                "numeric_precision": 32,
+                "numeric_scale": 0,
+                "is_nullable": true,
+                "is_unique": false,
+                "is_indexed": false,
+                "is_primary_key": false,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": false,
+                "foreign_key_table": null,
+                "foreign_key_column": null
+              }
+            }
+          }
+        ]
+      },
+      {
+        "collection": "text_amendments",
+        "field": "status",
+        "diff": [
+          {
+            "kind": "N",
+            "rhs": {
+              "collection": "text_amendments",
+              "field": "status",
+              "type": "string",
+              "meta": {
+                "collection": "text_amendments",
+                "conditions": null,
+                "display": "labels",
+                "display_options": {
+                  "choices": [
+                    {
+                      "background": "var(--theme--primary-background)",
+                      "color": "var(--theme--primary)",
+                      "foreground": "var(--theme--primary)",
+                      "text": "$t:published",
+                      "value": "publish"
+                    },
+                    {
+                      "background": "var(--theme--background-normal)",
+                      "color": "var(--theme--foreground)",
+                      "foreground": "var(--theme--foreground)",
+                      "text": "$t:draft",
+                      "value": "draft"
+                    },
+                    {
+                      "background": "var(--theme--warning-background)",
+                      "color": "var(--theme--warning)",
+                      "foreground": "var(--theme--warning)",
+                      "text": "$t:archived",
+                      "value": "archived"
+                    }
+                  ],
+                  "showAsDot": true
+                },
+                "field": "status",
+                "group": null,
+                "hidden": false,
+                "interface": "select-dropdown",
+                "note": null,
+                "options": {
+                  "choices": [
+                    {
+                      "color": "var(--theme--primary)",
+                      "text": "$t:published",
+                      "value": "publish"
+                    },
+                    {
+                      "color": "var(--theme--foreground)",
+                      "text": "$t:draft",
+                      "value": "draft"
+                    },
+                    {
+                      "color": "var(--theme--warning)",
+                      "text": "$t:archived",
+                      "value": "archived"
+                    }
+                  ]
+                },
+                "readonly": false,
+                "required": false,
+                "sort": 11,
+                "special": null,
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "full"
+              },
+              "schema": {
+                "name": "status",
+                "table": "text_amendments",
+                "data_type": "character varying",
+                "default_value": "draft",
+                "max_length": 255,
+                "numeric_precision": null,
+                "numeric_scale": null,
+                "is_nullable": false,
+                "is_unique": false,
+                "is_indexed": false,
+                "is_primary_key": false,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": false,
+                "foreign_key_table": null,
+                "foreign_key_column": null
+              }
+            }
+          }
+        ]
+      },
+      {
+        "collection": "video_embeds",
+        "field": "id",
+        "diff": [
+          {
+            "kind": "N",
+            "rhs": {
+              "collection": "video_embeds",
+              "field": "id",
+              "type": "uuid",
+              "meta": {
+                "collection": "video_embeds",
+                "conditions": null,
+                "display": null,
+                "display_options": null,
+                "field": "id",
+                "group": null,
+                "hidden": true,
+                "interface": "input",
+                "note": null,
+                "options": null,
+                "readonly": true,
+                "required": false,
+                "sort": 1,
+                "special": [
+                  "uuid"
+                ],
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "full"
+              },
+              "schema": {
+                "name": "id",
+                "table": "video_embeds",
+                "data_type": "uuid",
+                "default_value": null,
+                "max_length": null,
+                "numeric_precision": null,
+                "numeric_scale": null,
+                "is_nullable": false,
+                "is_unique": true,
+                "is_indexed": false,
+                "is_primary_key": true,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": false,
+                "foreign_key_table": null,
+                "foreign_key_column": null
+              }
+            }
+          }
+        ]
+      },
+      {
+        "collection": "video_embeds",
+        "field": "title",
+        "diff": [
+          {
+            "kind": "N",
+            "rhs": {
+              "collection": "video_embeds",
+              "field": "title",
+              "type": "string",
+              "meta": {
+                "collection": "video_embeds",
+                "conditions": null,
+                "display": null,
+                "display_options": null,
+                "field": "title",
+                "group": null,
+                "hidden": false,
+                "interface": "input",
+                "note": null,
+                "options": null,
+                "readonly": false,
+                "required": true,
+                "sort": 2,
+                "special": null,
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "full"
+              },
+              "schema": {
+                "name": "title",
+                "table": "video_embeds",
+                "data_type": "character varying",
+                "default_value": null,
+                "max_length": 255,
+                "numeric_precision": null,
+                "numeric_scale": null,
+                "is_nullable": false,
+                "is_unique": false,
+                "is_indexed": false,
+                "is_primary_key": false,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": false,
+                "foreign_key_table": null,
+                "foreign_key_column": null
+              }
+            }
+          }
+        ]
+      },
+      {
+        "collection": "video_embeds",
+        "field": "description",
+        "diff": [
+          {
+            "kind": "N",
+            "rhs": {
+              "collection": "video_embeds",
+              "field": "description",
+              "type": "text",
+              "meta": {
+                "collection": "video_embeds",
+                "conditions": null,
+                "display": null,
+                "display_options": null,
+                "field": "description",
+                "group": null,
+                "hidden": false,
+                "interface": "input-multiline",
+                "note": null,
+                "options": null,
+                "readonly": false,
+                "required": false,
+                "sort": 3,
+                "special": null,
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "full"
+              },
+              "schema": {
+                "name": "description",
+                "table": "video_embeds",
+                "data_type": "text",
+                "default_value": null,
+                "max_length": null,
+                "numeric_precision": null,
+                "numeric_scale": null,
+                "is_nullable": true,
+                "is_unique": false,
+                "is_indexed": false,
+                "is_primary_key": false,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": false,
+                "foreign_key_table": null,
+                "foreign_key_column": null
+              }
+            }
+          }
+        ]
+      },
+      {
+        "collection": "video_embeds",
+        "field": "date",
+        "diff": [
+          {
+            "kind": "N",
+            "rhs": {
+              "collection": "video_embeds",
+              "field": "date",
+              "type": "date",
+              "meta": {
+                "collection": "video_embeds",
+                "conditions": null,
+                "display": "date",
+                "display_options": null,
+                "field": "date",
+                "group": null,
+                "hidden": false,
+                "interface": "datetime",
+                "note": null,
+                "options": null,
+                "readonly": false,
+                "required": false,
+                "sort": 4,
+                "special": null,
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "full"
+              },
+              "schema": {
+                "name": "date",
+                "table": "video_embeds",
+                "data_type": "date",
+                "default_value": null,
+                "max_length": null,
+                "numeric_precision": null,
+                "numeric_scale": null,
+                "is_nullable": true,
+                "is_unique": false,
+                "is_indexed": false,
+                "is_primary_key": false,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": false,
+                "foreign_key_table": null,
+                "foreign_key_column": null
+              }
+            }
+          }
+        ]
+      },
+      {
+        "collection": "video_embeds",
+        "field": "time",
+        "diff": [
+          {
+            "kind": "N",
+            "rhs": {
+              "collection": "video_embeds",
+              "field": "time",
+              "type": "time",
+              "meta": {
+                "collection": "video_embeds",
+                "conditions": null,
+                "display": "time",
+                "display_options": null,
+                "field": "time",
+                "group": null,
+                "hidden": false,
+                "interface": "datetime",
+                "note": null,
+                "options": null,
+                "readonly": false,
+                "required": false,
+                "sort": 5,
+                "special": null,
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "full"
+              },
+              "schema": {
+                "name": "time",
+                "table": "video_embeds",
+                "data_type": "time without time zone",
+                "default_value": null,
+                "max_length": null,
+                "numeric_precision": null,
+                "numeric_scale": null,
+                "is_nullable": true,
+                "is_unique": false,
+                "is_indexed": false,
+                "is_primary_key": false,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": false,
+                "foreign_key_table": null,
+                "foreign_key_column": null
+              }
+            }
+          }
+        ]
+      },
+      {
+        "collection": "video_embeds",
+        "field": "url",
+        "diff": [
+          {
+            "kind": "N",
+            "rhs": {
+              "collection": "video_embeds",
+              "field": "url",
+              "type": "string",
+              "meta": {
+                "collection": "video_embeds",
+                "conditions": null,
+                "display": null,
+                "display_options": null,
+                "field": "url",
+                "group": null,
+                "hidden": false,
+                "interface": "input",
+                "note": null,
+                "options": null,
+                "readonly": false,
+                "required": false,
+                "sort": 6,
+                "special": null,
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "full"
+              },
+              "schema": {
+                "name": "url",
+                "table": "video_embeds",
+                "data_type": "character varying",
+                "default_value": null,
+                "max_length": 255,
+                "numeric_precision": null,
+                "numeric_scale": null,
+                "is_nullable": true,
+                "is_unique": false,
+                "is_indexed": false,
+                "is_primary_key": false,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": false,
+                "foreign_key_table": null,
+                "foreign_key_column": null
+              }
+            }
+          }
+        ]
+      },
+      {
+        "collection": "video_embeds",
+        "field": "status",
+        "diff": [
+          {
+            "kind": "N",
+            "rhs": {
+              "collection": "video_embeds",
+              "field": "status",
+              "type": "string",
+              "meta": {
+                "collection": "video_embeds",
+                "conditions": null,
+                "display": "labels",
+                "display_options": {
+                  "choices": [
+                    {
+                      "background": "var(--theme--primary-background)",
+                      "color": "var(--theme--primary)",
+                      "foreground": "var(--theme--primary)",
+                      "text": "$t:published",
+                      "value": "published"
+                    },
+                    {
+                      "background": "var(--theme--background-normal)",
+                      "color": "var(--theme--foreground)",
+                      "foreground": "var(--theme--foreground)",
+                      "text": "$t:draft",
+                      "value": "draft"
+                    },
+                    {
+                      "background": "var(--theme--warning-background)",
+                      "color": "var(--theme--warning)",
+                      "foreground": "var(--theme--warning)",
+                      "text": "$t:archived",
+                      "value": "archived"
+                    }
+                  ],
+                  "showAsDot": true
+                },
+                "field": "status",
+                "group": null,
+                "hidden": false,
+                "interface": "select-dropdown",
+                "note": null,
+                "options": {
+                  "choices": [
+                    {
+                      "color": "var(--theme--primary)",
+                      "text": "$t:published",
+                      "value": "published"
+                    },
+                    {
+                      "color": "var(--theme--foreground)",
+                      "text": "$t:draft",
+                      "value": "draft"
+                    },
+                    {
+                      "color": "var(--theme--warning)",
+                      "text": "$t:archived",
+                      "value": "archived"
+                    }
+                  ]
+                },
+                "readonly": false,
+                "required": false,
+                "sort": 9,
+                "special": null,
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "half"
+              },
+              "schema": {
+                "name": "status",
+                "table": "video_embeds",
+                "data_type": "character varying",
+                "default_value": "draft",
+                "max_length": 255,
+                "numeric_precision": null,
+                "numeric_scale": null,
+                "is_nullable": false,
+                "is_unique": false,
+                "is_indexed": false,
+                "is_primary_key": false,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": false,
+                "foreign_key_table": null,
+                "foreign_key_column": null
+              }
+            }
+          }
+        ]
+      },
+      {
+        "collection": "video_embeds",
+        "field": "sort",
+        "diff": [
+          {
+            "kind": "N",
+            "rhs": {
+              "collection": "video_embeds",
+              "field": "sort",
+              "type": "integer",
+              "meta": {
+                "collection": "video_embeds",
+                "conditions": null,
+                "display": null,
+                "display_options": null,
+                "field": "sort",
+                "group": null,
+                "hidden": false,
+                "interface": "input",
+                "note": null,
+                "options": null,
+                "readonly": false,
+                "required": false,
+                "sort": 10,
+                "special": null,
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "half"
+              },
+              "schema": {
+                "name": "sort",
+                "table": "video_embeds",
+                "data_type": "integer",
+                "default_value": null,
+                "max_length": null,
+                "numeric_precision": 32,
+                "numeric_scale": 0,
+                "is_nullable": true,
+                "is_unique": false,
+                "is_indexed": false,
+                "is_primary_key": false,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": false,
+                "foreign_key_table": null,
+                "foreign_key_column": null
+              }
+            }
+          }
+        ]
+      },
+      {
+        "collection": "video_embeds",
+        "field": "user_created",
+        "diff": [
+          {
+            "kind": "N",
+            "rhs": {
+              "collection": "video_embeds",
+              "field": "user_created",
+              "type": "uuid",
+              "meta": {
+                "collection": "video_embeds",
+                "conditions": null,
+                "display": "user",
+                "display_options": null,
+                "field": "user_created",
+                "group": null,
+                "hidden": true,
+                "interface": "select-dropdown-m2o",
+                "note": null,
+                "options": {
+                  "template": "{{avatar}} {{first_name}} {{last_name}}"
+                },
+                "readonly": true,
+                "required": false,
+                "sort": 11,
+                "special": [
+                  "user-created"
+                ],
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "half"
+              },
+              "schema": {
+                "name": "user_created",
+                "table": "video_embeds",
+                "data_type": "uuid",
+                "default_value": null,
+                "max_length": null,
+                "numeric_precision": null,
+                "numeric_scale": null,
+                "is_nullable": true,
+                "is_unique": false,
+                "is_indexed": false,
+                "is_primary_key": false,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": false,
+                "foreign_key_table": "directus_users",
+                "foreign_key_column": "id"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "collection": "video_embeds",
+        "field": "date_created",
+        "diff": [
+          {
+            "kind": "N",
+            "rhs": {
+              "collection": "video_embeds",
+              "field": "date_created",
+              "type": "timestamp",
+              "meta": {
+                "collection": "video_embeds",
+                "conditions": null,
+                "display": "datetime",
+                "display_options": {
+                  "relative": true
+                },
+                "field": "date_created",
+                "group": null,
+                "hidden": true,
+                "interface": "datetime",
+                "note": null,
+                "options": null,
+                "readonly": true,
+                "required": false,
+                "sort": 12,
+                "special": [
+                  "date-created"
+                ],
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "half"
+              },
+              "schema": {
+                "name": "date_created",
+                "table": "video_embeds",
+                "data_type": "timestamp with time zone",
+                "default_value": null,
+                "max_length": null,
+                "numeric_precision": null,
+                "numeric_scale": null,
+                "is_nullable": true,
+                "is_unique": false,
+                "is_indexed": false,
+                "is_primary_key": false,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": false,
+                "foreign_key_table": null,
+                "foreign_key_column": null
+              }
+            }
+          }
+        ]
+      },
+      {
+        "collection": "video_embeds",
+        "field": "user_updated",
+        "diff": [
+          {
+            "kind": "N",
+            "rhs": {
+              "collection": "video_embeds",
+              "field": "user_updated",
+              "type": "uuid",
+              "meta": {
+                "collection": "video_embeds",
+                "conditions": null,
+                "display": "user",
+                "display_options": null,
+                "field": "user_updated",
+                "group": null,
+                "hidden": true,
+                "interface": "select-dropdown-m2o",
+                "note": null,
+                "options": {
+                  "template": "{{avatar}} {{first_name}} {{last_name}}"
+                },
+                "readonly": true,
+                "required": false,
+                "sort": 13,
+                "special": [
+                  "user-updated"
+                ],
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "half"
+              },
+              "schema": {
+                "name": "user_updated",
+                "table": "video_embeds",
+                "data_type": "uuid",
+                "default_value": null,
+                "max_length": null,
+                "numeric_precision": null,
+                "numeric_scale": null,
+                "is_nullable": true,
+                "is_unique": false,
+                "is_indexed": false,
+                "is_primary_key": false,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": false,
+                "foreign_key_table": "directus_users",
+                "foreign_key_column": "id"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "collection": "video_embeds",
+        "field": "date_updated",
+        "diff": [
+          {
+            "kind": "N",
+            "rhs": {
+              "collection": "video_embeds",
+              "field": "date_updated",
+              "type": "timestamp",
+              "meta": {
+                "collection": "video_embeds",
+                "conditions": null,
+                "display": "datetime",
+                "display_options": {
+                  "relative": true
+                },
+                "field": "date_updated",
+                "group": null,
+                "hidden": true,
+                "interface": "datetime",
+                "note": null,
+                "options": null,
+                "readonly": true,
+                "required": false,
+                "sort": 14,
+                "special": [
+                  "date-updated"
+                ],
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "half"
+              },
+              "schema": {
+                "name": "date_updated",
+                "table": "video_embeds",
+                "data_type": "timestamp with time zone",
+                "default_value": null,
+                "max_length": null,
+                "numeric_precision": null,
+                "numeric_scale": null,
+                "is_nullable": true,
+                "is_unique": false,
+                "is_indexed": false,
+                "is_primary_key": false,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": false,
+                "foreign_key_table": null,
+                "foreign_key_column": null
+              }
+            }
+          }
+        ]
+      },
+      {
+        "collection": "video_embeds",
+        "field": "category",
+        "diff": [
+          {
+            "kind": "N",
+            "rhs": {
+              "collection": "video_embeds",
+              "field": "category",
+              "type": "string",
+              "meta": {
+                "collection": "video_embeds",
+                "conditions": null,
+                "display": null,
+                "display_options": null,
+                "field": "category",
+                "group": null,
+                "hidden": false,
+                "interface": "select-dropdown",
+                "note": null,
+                "options": {
+                  "choices": [
+                    {
+                      "text": "UAC Meeting",
+                      "value": "uac_meeting"
+                    },
+                    {
+                      "text": "Informational Sessions",
+                      "value": "info_sessions"
+                    }
+                  ]
+                },
+                "readonly": false,
+                "required": false,
+                "sort": 7,
+                "special": null,
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "full"
+              },
+              "schema": {
+                "name": "category",
+                "table": "video_embeds",
+                "data_type": "character varying",
+                "default_value": null,
+                "max_length": 255,
+                "numeric_precision": null,
+                "numeric_scale": null,
+                "is_nullable": true,
+                "is_unique": false,
+                "is_indexed": false,
+                "is_primary_key": false,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": false,
+                "foreign_key_table": null,
+                "foreign_key_column": null
+              }
+            }
+          }
+        ]
+      },
+      {
+        "collection": "video_embeds",
+        "field": "slides",
+        "diff": [
+          {
+            "kind": "N",
+            "rhs": {
+              "collection": "video_embeds",
+              "field": "slides",
+              "type": "uuid",
+              "meta": {
+                "collection": "video_embeds",
+                "conditions": null,
+                "display": null,
+                "display_options": null,
+                "field": "slides",
+                "group": null,
+                "hidden": false,
+                "interface": "file",
+                "note": null,
+                "options": null,
+                "readonly": false,
+                "required": false,
+                "sort": 8,
+                "special": [
+                  "file"
+                ],
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "full"
+              },
+              "schema": {
+                "name": "slides",
+                "table": "video_embeds",
+                "data_type": "uuid",
+                "default_value": null,
+                "max_length": null,
+                "numeric_precision": null,
+                "numeric_scale": null,
+                "is_nullable": true,
+                "is_unique": false,
+                "is_indexed": false,
+                "is_primary_key": false,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": false,
+                "foreign_key_table": "directus_files",
+                "foreign_key_column": "id"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "collection": "ai_prompts",
+        "field": "user_created",
+        "related_collection": "directus_users",
+        "diff": [
+          {
+            "kind": "D",
+            "lhs": {
+              "collection": "ai_prompts",
+              "field": "user_created",
+              "related_collection": "directus_users",
+              "meta": {
+                "junction_field": null,
+                "many_collection": "ai_prompts",
+                "many_field": "user_created",
+                "one_allowed_collections": null,
+                "one_collection": "directus_users",
+                "one_collection_field": null,
+                "one_deselect_action": "nullify",
+                "one_field": null,
+                "sort_field": null
+              },
+              "schema": {
+                "table": "ai_prompts",
+                "column": "user_created",
+                "foreign_key_table": "directus_users",
+                "foreign_key_column": "id",
+                "constraint_name": "ai_prompts_user_created_foreign",
+                "on_update": "NO ACTION",
+                "on_delete": "NO ACTION"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "collection": "ai_prompts",
+        "field": "user_updated",
+        "related_collection": "directus_users",
+        "diff": [
+          {
+            "kind": "D",
+            "lhs": {
+              "collection": "ai_prompts",
+              "field": "user_updated",
+              "related_collection": "directus_users",
+              "meta": {
+                "junction_field": null,
+                "many_collection": "ai_prompts",
+                "many_field": "user_updated",
+                "one_allowed_collections": null,
+                "one_collection": "directus_users",
+                "one_collection_field": null,
+                "one_deselect_action": "nullify",
+                "one_field": null,
+                "sort_field": null
+              },
+              "schema": {
+                "table": "ai_prompts",
+                "column": "user_updated",
+                "foreign_key_table": "directus_users",
+                "foreign_key_column": "id",
+                "constraint_name": "ai_prompts_user_updated_foreign",
+                "on_update": "NO ACTION",
+                "on_delete": "NO ACTION"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "collection": "pages",
+        "field": "user_created",
+        "related_collection": "directus_users",
+        "diff": [
+          {
+            "kind": "E",
+            "path": [
+              "schema",
+              "on_delete"
+            ],
+            "lhs": "NO ACTION",
+            "rhs": "SET NULL"
+          }
+        ]
+      },
+      {
+        "collection": "pages",
+        "field": "user_updated",
+        "related_collection": "directus_users",
+        "diff": [
+          {
+            "kind": "E",
+            "path": [
+              "schema",
+              "on_delete"
+            ],
+            "lhs": "NO ACTION",
+            "rhs": "SET NULL"
+          }
+        ]
+      },
+      {
+        "collection": "video_embeds",
+        "field": "user_created",
+        "related_collection": "directus_users",
+        "diff": [
+          {
+            "kind": "N",
+            "rhs": {
+              "collection": "video_embeds",
+              "field": "user_created",
+              "related_collection": "directus_users",
+              "meta": {
+                "junction_field": null,
+                "many_collection": "video_embeds",
+                "many_field": "user_created",
+                "one_allowed_collections": null,
+                "one_collection": "directus_users",
+                "one_collection_field": null,
+                "one_deselect_action": "nullify",
+                "one_field": null,
+                "sort_field": null
+              },
+              "schema": {
+                "table": "video_embeds",
+                "column": "user_created",
+                "foreign_key_table": "directus_users",
+                "foreign_key_column": "id",
+                "constraint_name": "video_embeds_user_created_foreign",
+                "on_update": "NO ACTION",
+                "on_delete": "SET NULL"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "collection": "video_embeds",
+        "field": "user_updated",
+        "related_collection": "directus_users",
+        "diff": [
+          {
+            "kind": "N",
+            "rhs": {
+              "collection": "video_embeds",
+              "field": "user_updated",
+              "related_collection": "directus_users",
+              "meta": {
+                "junction_field": null,
+                "many_collection": "video_embeds",
+                "many_field": "user_updated",
+                "one_allowed_collections": null,
+                "one_collection": "directus_users",
+                "one_collection_field": null,
+                "one_deselect_action": "nullify",
+                "one_field": null,
+                "sort_field": null
+              },
+              "schema": {
+                "table": "video_embeds",
+                "column": "user_updated",
+                "foreign_key_table": "directus_users",
+                "foreign_key_column": "id",
+                "constraint_name": "video_embeds_user_updated_foreign",
+                "on_update": "NO ACTION",
+                "on_delete": "SET NULL"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "collection": "video_embeds",
+        "field": "slides",
+        "related_collection": "directus_files",
+        "diff": [
+          {
+            "kind": "N",
+            "rhs": {
+              "collection": "video_embeds",
+              "field": "slides",
+              "related_collection": "directus_files",
+              "meta": {
+                "junction_field": null,
+                "many_collection": "video_embeds",
+                "many_field": "slides",
+                "one_allowed_collections": null,
+                "one_collection": "directus_files",
+                "one_collection_field": null,
+                "one_deselect_action": "nullify",
+                "one_field": null,
+                "sort_field": null
+              },
+              "schema": {
+                "table": "video_embeds",
+                "column": "slides",
+                "foreign_key_table": "directus_files",
+                "foreign_key_column": "id",
+                "constraint_name": "video_embeds_slides_foreign",
+                "on_update": "NO ACTION",
+                "on_delete": "SET NULL"
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
