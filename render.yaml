@@ -21,7 +21,7 @@ services:
     env: docker
     region: United States, Ohio
     plan: standard
-    rootDirectory: backend
+    rootDir: backend
     dockerfilePath: ./Dockerfile
 
     # Monorepo build filter - only deploy when backend changes
@@ -119,7 +119,7 @@ services:
     env: static
     region: United States, Ohio
     plan: starter
-    rootDirectory: frontend
+    rootDir: frontend
 
     # Monorepo build filter - only deploy when frontend changes
     buildFilter:
